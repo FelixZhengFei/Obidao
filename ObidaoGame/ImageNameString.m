@@ -88,6 +88,7 @@
     case VeggieOnion:
     case VeggieTomato:
     case VeggiePotato:
+      return @"background_image_potato_ipadhd.png";
     case VeggieCucumber:
     case VeggieEggplant:
       return @"background_image_foxy_ipadhd.png";

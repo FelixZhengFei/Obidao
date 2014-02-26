@@ -24,6 +24,7 @@
   SKSpriteNode *onionInhabitantSprite;
   SKSpriteNode *radishInhabitantSprite;
   SKSpriteNode *eggplantInhabitantSprite;
+  SKSpriteNode *potatoInhabitantSprite;
 }
 
 @end
@@ -62,9 +63,8 @@
   [self addChild:onionInhabitantSprite];
   radishInhabitantSprite = [Inhabitant createInbitants:VeggieRadish size:self.size];
   [self addChild:radishInhabitantSprite];
-  eggplantInhabitantSprite = [Inhabitant createInbitants:VeggieEggplant size:self.size];
-  [self addChild:eggplantInhabitantSprite];
-
+  potatoInhabitantSprite = [Inhabitant createInbitants:VeggiePotato size:self.size];
+  [self addChild:potatoInhabitantSprite];
 }
 
 - (BOOL)isTomatoInhabitantTouched:(CGPoint)location {
@@ -87,10 +87,14 @@
   return eggplantInhabitantSprite && CGRectContainsPoint(eggplantInhabitantSprite.frame, location);
 }
 
+- (BOOL)ispotatoInhabitantSpriteTouched:(CGPoint)location {
+  return potatoInhabitantSprite && CGRectContainsPoint(potatoInhabitantSprite.frame, location);
+}
+
 #pragma mark -Touch Delegete
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-
+  
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -105,32 +109,32 @@
       [self.view presentScene:veggiePage];
     } else if ([self isTomatoInhabitantTouched:location]) {
       [self removeAllActions];
-
+      
       TomotoVeggiePage *veggiePage = [[TomotoVeggiePage alloc] initWithSize:self.size];
       veggiePage.scaleMode = SKSceneScaleModeAspectFill;
       [self.view presentScene:veggiePage];
     } else if([self isCarrotInhabitantTouched:location]) {
       [self removeAllActions];
-
+      
       CarotVeegiePage *veggiePage = [[CarotVeegiePage alloc] initWithSize:self.size];
       veggiePage.scaleMode = SKSceneScaleModeAspectFill;
       [self.view presentScene:veggiePage];
     } else if([self isOnionInhabitantSpriteTouched:location]) {
       [self removeAllActions];
-
+      
       OnionVeggiePage *veggiePage = [[OnionVeggiePage alloc] initWithSize:self.size];
       veggiePage.scaleMode = SKSceneScaleModeAspectFill;
       [self.view presentScene:veggiePage];
     }else if([self isRadishInhabitantSpriteTouched:location]) {
       [self removeAllActions];
-
+      
       RadishVeggiePage *veggiePage = [[RadishVeggiePage alloc] initWithSize:self.size];
       veggiePage.scaleMode = SKSceneScaleModeAspectFill;
       [self.view presentScene:veggiePage];
-    } else if ([self isEggplantInhabitantSpriteTouched:location]) {
+    } else if ([self ispotatoInhabitantSpriteTouched:location]) {
       [self removeAllActions];
-
-      EggplantVeggiePage *veggiePage = [[EggplantVeggiePage alloc] initWithSize:self.size];
+      
+      PotatoVeggiePage *veggiePage = [[PotatoVeggiePage alloc] initWithSize:self.size];
       veggiePage.scaleMode = SKSceneScaleModeAspectFill;
       [self.view presentScene:veggiePage];;
     }

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "EmotionPageControllerScene.h"
 
-@interface PotatoVeggiePage : EmotionPageControllerScene
-    
+@interface PotatoVeggiePage : SKScene
+
 
 @end

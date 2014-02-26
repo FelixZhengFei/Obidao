@@ -24,13 +24,13 @@
     case VeggieOnion:
       return   [self showClosestInhabitant:[CoordinateSystem fixedPoint:CGPointMake(POINT_X_VEGGIE_ONION, POINT_Y_VEGGIE_ONION) withSize:screenSize]];
     case VeggieRadish:
-       return   [self showClosestInhabitant:[CoordinateSystem fixedPoint:CGPointMake(POINT_X_VEGGIE_RADISH, POINT_Y_VEGGIE_RADISH) withSize:screenSize]];
+      return   [self showClosestInhabitant:[CoordinateSystem fixedPoint:CGPointMake(POINT_X_VEGGIE_RADISH, POINT_Y_VEGGIE_RADISH) withSize:screenSize]];
     case VeggieEggplant:
-       return  [self showClosestInhabitant:[CoordinateSystem fixedPoint:CGPointMake(POINT_X_VEGGIE_EGGPLANT, POINT_Y_VEGGIE_EGGPLANT) withSize:screenSize]];
+      return  [self showClosestInhabitant:[CoordinateSystem fixedPoint:CGPointMake(POINT_X_VEGGIE_EGGPLANT, POINT_Y_VEGGIE_EGGPLANT) withSize:screenSize]];
     case VeggieCucumber:
       //  return   [self showClosestInhabitant:[CoordinateSystem fixedPoint:CGPointMake(POINT_X_VEGGIE_CUCUMBER, POINT_Y_VEGGIE_CUCUMBER) withSize:screenSize]];
     case VeggiePotato:
-      //   return  [self showClosestInhabitant:[CoordinateSystem fixedPoint:CGPointMake(POINT_X_VEGGIE_POTATO, POINT_Y_VEGGIE_POTATO) withSize:screenSize]];
+      return  [self showClosestInhabitant:[CoordinateSystem fixedPoint:CGPointMake(POINT_X_VEGGIE_POTATO, POINT_Y_VEGGIE_POTATO) withSize:screenSize]];
     case VeggieCorn:
       // return   [self showClosestInhabitant:[CoordinateSystem fixedPoint:CGPointMake(POINT_X_VEGGIE_CORN, POINT_Y_VEGGIE_CORN) withSize:screenSize]];
     default:

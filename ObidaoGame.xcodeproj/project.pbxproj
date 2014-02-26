@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9619E9A218BD903100DB692A /* background_image_potato_ipadhd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9619E99D18BD903100DB692A /* background_image_potato_ipadhd@2x.png */; };
+		9619E9A318BD903100DB692A /* tree1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9619E99E18BD903100DB692A /* tree1@2x.png */; };
+		9619E9A418BD903100DB692A /* tree2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9619E99F18BD903100DB692A /* tree2@2x.png */; };
+		9619E9A518BD903100DB692A /* tree3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9619E9A018BD903100DB692A /* tree3@2x.png */; };
+		9619E9A618BD903100DB692A /* cucumber_behind_tree@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9619E9A118BD903100DB692A /* cucumber_behind_tree@2x.png */; };
+		9619E9A818BD904300DB692A /* potato_walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9619E9A718BD904300DB692A /* potato_walk.atlas */; };
+		9619E9AA18BD904C00DB692A /* corn_walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9619E9A918BD904C00DB692A /* corn_walk.atlas */; };
 		9656B33118640014004B39E4 /* MyAVAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9656B33018640014004B39E4 /* MyAVAudioPlayer.m */; };
 		9656B334186411C0004B39E4 /* UITouch+FingerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9656B333186411C0004B39E4 /* UITouch+FingerTouch.m */; };
 		965AE93F1862863700FF3D39 /* ina_anger.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 965AE93A1862863700FF3D39 /* ina_anger.atlas */; };
@@ -148,6 +155,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9619E99D18BD903100DB692A /* background_image_potato_ipadhd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_image_potato_ipadhd@2x.png"; sourceTree = "<group>"; };
+		9619E99E18BD903100DB692A /* tree1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree1@2x.png"; sourceTree = "<group>"; };
+		9619E99F18BD903100DB692A /* tree2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree2@2x.png"; sourceTree = "<group>"; };
+		9619E9A018BD903100DB692A /* tree3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree3@2x.png"; sourceTree = "<group>"; };
+		9619E9A118BD903100DB692A /* cucumber_behind_tree@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cucumber_behind_tree@2x.png"; sourceTree = "<group>"; };
+		9619E9A718BD904300DB692A /* potato_walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = potato_walk.atlas; sourceTree = "<group>"; };
+		9619E9A918BD904C00DB692A /* corn_walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = corn_walk.atlas; sourceTree = "<group>"; };
 		9656B32F18640014004B39E4 /* MyAVAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAVAudioPlayer.h; sourceTree = "<group>"; };
 		9656B33018640014004B39E4 /* MyAVAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAVAudioPlayer.m; sourceTree = "<group>"; };
 		9656B332186411C0004B39E4 /* UITouch+FingerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+FingerTouch.h"; sourceTree = "<group>"; };
@@ -298,6 +312,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9619E99C18BD900700DB692A /* Potato */ = {
+			isa = PBXGroup;
+			children = (
+				9619E9A918BD904C00DB692A /* corn_walk.atlas */,
+				9619E9A718BD904300DB692A /* potato_walk.atlas */,
+				9619E99D18BD903100DB692A /* background_image_potato_ipadhd@2x.png */,
+				9619E99E18BD903100DB692A /* tree1@2x.png */,
+				9619E99F18BD903100DB692A /* tree2@2x.png */,
+				9619E9A018BD903100DB692A /* tree3@2x.png */,
+				9619E9A118BD903100DB692A /* cucumber_behind_tree@2x.png */,
+			);
+			name = Potato;
+			sourceTree = "<group>";
+		};
 		965AE9981862BA0600FF3D39 /* Corn */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,6 +549,7 @@
 		967B2229185EE0B900C16B8E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9619E99C18BD900700DB692A /* Potato */,
 				967B22F2185EE19300C16B8E /* Happy images */,
 				967B22E5185EE17900C16B8E /* Onion */,
 				967B22CC185EE16400C16B8E /* Tomato */,
@@ -788,29 +817,36 @@
 				967B2235185EE0E400C16B8E /* background_image_radish_ipadhd@2x.png in Resources */,
 				967B21C0185EDE5000C16B8E /* Main_iPhone.storyboard in Resources */,
 				967B2328185EE1F600C16B8E /* emotion_fear.mp3 in Resources */,
+				9619E9A218BD903100DB692A /* background_image_potato_ipadhd@2x.png in Resources */,
 				965AE9421862863700FF3D39 /* ina_head.atlas in Resources */,
 				967B22FB185EE1A600C16B8E /* tomato_happy_ipadhd@2x.png in Resources */,
 				965AE97718628AE000FF3D39 /* radish_happy.atlas in Resources */,
 				965AE97418628AE000FF3D39 /* radish_eat_2.atlas in Resources */,
 				967B2244185EE10700C16B8E /* foxy_neutral@2x.png in Resources */,
 				967B2301185EE1A600C16B8E /* onion_happy_ipadhd@2x.png in Resources */,
+				9619E9AA18BD904C00DB692A /* corn_walk.atlas in Resources */,
 				965AE96B18628A5100FF3D39 /* cattot_next_ball.atlas in Resources */,
 				965AE9791862961B00FF3D39 /* ball_kinds.atlas in Resources */,
 				967B2324185EE1F600C16B8E /* emotion_happy.mp3 in Resources */,
 				965AE9521862888900FF3D39 /* tomato_cry.atlas in Resources */,
 				965AE97318628AE000FF3D39 /* radish_eat_1.atlas in Resources */,
 				967B232E185EE1F600C16B8E /* emotion_anger.mp3 in Resources */,
+				9619E9A418BD903100DB692A /* tree2@2x.png in Resources */,
 				965AE97D1862973900FF3D39 /* carrot_increase.atlas in Resources */,
 				965AE9511862888900FF3D39 /* tomato_anger.atlas in Resources */,
 				967B2307185EE1A600C16B8E /* cucumber_happy_ipadhd@2x.png in Resources */,
 				967B222F185EE0E300C16B8E /* background_image_foxy_ipadhd@2x.png in Resources */,
 				967B22FF185EE1A600C16B8E /* radish_happy_ipadhd@2x.png in Resources */,
+				9619E9A518BD903100DB692A /* tree3@2x.png in Resources */,
+				9619E9A618BD903100DB692A /* cucumber_behind_tree@2x.png in Resources */,
 				965AE96118628A4500FF3D39 /* ballon_deceare.atlas in Resources */,
+				9619E9A318BD903100DB692A /* tree1@2x.png in Resources */,
 				965AE96818628A5100FF3D39 /* carrot_scare.atlas in Resources */,
 				967B232A185EE1F600C16B8E /* emotion_sad.mp3 in Resources */,
 				967B21B7185EDE5000C16B8E /* InfoPlist.strings in Resources */,
 				965AE95B1862895000FF3D39 /* onion_anger.atlas in Resources */,
 				967B2309185EE1A600C16B8E /* eggplant_happy_ipadhd@2x.png in Resources */,
+				9619E9A818BD904300DB692A /* potato_walk.atlas in Resources */,
 				965AE97218628AE000FF3D39 /* raddish_cry.atlas in Resources */,
 				965AE97518628AE000FF3D39 /* radish_eat_3.atlas in Resources */,
 				96BDAABF18618DD300ED84E8 /* surprise.atlas in Resources */,

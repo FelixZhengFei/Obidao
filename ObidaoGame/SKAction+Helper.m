@@ -323,5 +323,24 @@
   return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.1 resize:YES restore:NO];
 }
 
++ (SKAction *)potatoSpriteWalks {
+  NSMutableArray *walkAnimFrames = [NSMutableArray array];
+  SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_walk"];
+  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+    NSString* texture = [NSString stringWithFormat:@"Nobi_walk%04d",i];
+    [walkAnimFrames addObject:[atlas textureNamed:texture]];
+  }
+  return  [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:NO restore:NO] count:5];
+}
+
++ (SKAction *)cornSpriteWalks {
+  NSMutableArray *walkAnimFrames = [NSMutableArray array];
+  SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"corn_walk"];
+  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+    NSString* texture = [NSString stringWithFormat:@"momo_walk%04d",i];
+    [walkAnimFrames addObject:[atlas textureNamed:texture]];
+  }
+  return  [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO] count:6];
+}
 
 @end

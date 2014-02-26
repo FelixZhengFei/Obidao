@@ -27,4 +27,7 @@
 + (SKAction *)eggplantBallDisappear;
 + (SKAction *)eggplantBallHitHead;
 + (SKAction *)eggplantBallDown;
++ (SKAction *)cornSpriteWalks;
++ (SKAction *)potatoSpriteWalks;
+
 @end
