@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8FDFDE76-EFB4-478A-863F-0AFE8E55BD0A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ObidaoGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F86FE7A5-85D8-4C73-AB1B-2D48BC9B5C78</key>
+		<string>ssh://github.com/FelixZhengFei/Obidao.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ObidaoGame.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F86FE7A5-85D8-4C73-AB1B-2D48BC9B5C78</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/FelixZhengFei/Obidao.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F86FE7A5-85D8-4C73-AB1B-2D48BC9B5C78</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F86FE7A5-85D8-4C73-AB1B-2D48BC9B5C78</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Obidao</string>
+		</dict>
+	</array>
+</dict>
+</plist>
