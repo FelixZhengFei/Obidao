@@ -23,6 +23,8 @@
   EmotionType _currentEmotionType;
   
   SKSpriteNode *_backButtonSprite;
+  SKSpriteNode *_backgroundSprite;
+
   SKSpriteNode *_potatoInhabitantSprite;
   SKSpriteNode *_cornInhabitantSprite;
   SKSpriteNode *_cucumberInhabitantSprite;
@@ -34,8 +36,10 @@
 
 - (id)initWithSize:(CGSize)size {
   if (self = [super initWithSize:size]) {
+    self.backgroundColor = [SKColor redColor];
+      self.backgroundColor = [SKColor colorWithRed:0.486 green:0.678 blue:0.227 alpha:1.0];
+
     [self configBackgroundImage];
-    [self addTreeSprites];
     [self configBackButtonItem];
     [self configView];
   }
@@ -70,28 +74,28 @@
 }
 
 - (void)configBackgroundImage {
-  self.backgroundColor = [SKColor colorWithRed:124/255 green:173/255 blue:58/255 alpha:1.0];
-  SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:[ImageNameString getBackgroundImageName:VeggiePotato]];
-  background.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
-  background.xScale = background.yScale = 0.8;
-  [self addChild:background];
+  _backgroundSprite = [SKSpriteNode spriteNodeWithImageNamed:[ImageNameString getBackgroundImageName:VeggiePotato]];
+  _backgroundSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
+  _backgroundSprite.xScale = _backgroundSprite.yScale = 0.8;
+  [self addChild:_backgroundSprite];
+  [self addTreeSprites];
 }
 
 - (void)addTreeSprites {
   SKSpriteNode *tree1 = [SKSpriteNode spriteNodeWithImageNamed:@"tree1"];
-  tree1.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.5);
+  tree1.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * .2);
   tree1.xScale = tree1.yScale = 0.8;
-  [self addChild:tree1];
+  [_backgroundSprite addChild:tree1];
   
   SKSpriteNode *tree2 = [SKSpriteNode spriteNodeWithImageNamed:@"tree2"];
-  tree2.position = CGPointMake(0,CGRectGetMidY(self.frame));
+  tree2.position = CGPointMake(0,CGRectGetMidY(self.frame) * 0.6);
   tree2.xScale = tree2.yScale = 0.8;
-  [self addChild:tree2];
+  [_backgroundSprite addChild:tree2];
   
   SKSpriteNode *tree3 = [SKSpriteNode spriteNodeWithImageNamed:@"tree3"];
-  tree3.position = CGPointMake(CGRectGetMidX(self.frame) * 1.8,CGRectGetMidY(self.frame) * 1.2);
+  tree3.position = CGPointMake(CGRectGetMidX(self.frame) *(-1) ,CGRectGetMidY(self.frame) * (- 0.1));
   tree3.xScale = tree3.yScale = 0.8;
-  [self addChild:tree3];
+  [_backgroundSprite addChild:tree3];
 }
 
 - (void)initThreeInhabitants {
@@ -162,7 +166,8 @@
     [self fingerTouchTwoActions];
   else if (3 == _countsOfEmotionClick)
     [self fingerTouchThreeActions];
-    
+  else if (4 == _countsOfEmotionClick)
+    [self fingerTouchFourActions];
 }
 
 - (void)fingerTouchOneActions {
@@ -202,6 +207,23 @@
   SKAction *potatoHappyAction = [SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:VeggiePotato] count:5];
   [_cornInhabitantSprite runAction:cornHappyAction];
   [_potatoInhabitantSprite runAction:[SKAction sequence:@[potatoHappyAction,chaneFingerTouchAbleAction]]];
+}
+
+- (void)fingerTouchFourActions {
+  SKAction *hide = [SKAction fadeAlphaTo:0 duration:0.5];
+  SKAction *hideOtherTwoSprites = [SKAction runBlock:^{
+    _cornInhabitantSprite.hidden = YES;
+    _cucumberInhabitantSprite.hidden = YES;
+  }];
+  SKAction *show = [SKAction fadeAlphaTo:1 duration:.25];
+  [self runAction:[SKAction sequence:@[hide,hideOtherTwoSprites,show]] completion:^{
+    _backgroundSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.2);
+    _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 1;
+    SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
+    SKAction *getLostAction = [SKAction potatoGetLost];
+    SKAction *potatoCryAction = [SKAction repeatAction:[SKAction sadAnimationWithInhabitantType:VeggiePotato] count:5];
+    [_potatoInhabitantSprite runAction:[SKAction sequence:@[getLostAction,potatoCryAction,chaneFingerTouchAbleAction]]];
+  }];
 }
 
 @end

@@ -160,6 +160,14 @@
       }
       return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
     }
+    case VeggiePotato: {
+      SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_cry"];
+      for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+        NSString* texture = [NSString stringWithFormat:@"Nobi_cry%04d",i];
+        [walkAnimFrames addObject:[atlas textureNamed:texture]];
+      }
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+    }
     default:
       return nil;
   }
@@ -388,12 +396,21 @@
 + (SKAction *)potatoBallFlyOut {
   NSMutableArray *walkAnimFrames = [NSMutableArray array];
   SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_fear"];
-  for (int i = 1; i < 14; i++) {
+  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
     NSString* texture = [NSString stringWithFormat:@"potato_ball_fly%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
   return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO];
 }
 
++ (SKAction *)potatoGetLost {
+  NSMutableArray *walkAnimFrames = [NSMutableArray array];
+  SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_lost"];
+  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+    NSString* texture = [NSString stringWithFormat:@"Nobi_lost%04d",i];
+    [walkAnimFrames addObject:[atlas textureNamed:texture]];
+  }
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.16 resize:NO restore:NO];
+}
 
 @end
