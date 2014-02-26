@@ -53,6 +53,22 @@
       }
       return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
     }
+    case VeggieCorn: {
+      SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"corn_happy"];
+      for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+        NSString* texture = [NSString stringWithFormat:@"Momo_happy%04d",i];
+        [walkAnimFrames addObject:[atlas textureNamed:texture]];
+      }
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+    }
+    case VeggiePotato: {
+      SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_happy"];
+      for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+        NSString* texture = [NSString stringWithFormat:@"Nobi_happy%04d",i];
+        [walkAnimFrames addObject:[atlas textureNamed:texture]];
+      }
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+    }
     default: {
       return nil;
     }

@@ -16,6 +16,8 @@
 		9619E9B518BDA4DD00DB692A /* corn_fear.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9619E9B418BDA4DD00DB692A /* corn_fear.atlas */; };
 		9619E9B718BDA4E400DB692A /* cucumber_join.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9619E9B618BDA4E400DB692A /* cucumber_join.atlas */; };
 		96272E9418BDC64B00CA579E /* qiqiu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96272E9318BDC64B00CA579E /* qiqiu@2x.png */; };
+		96272F3118BDD53100CA579E /* corn_happy.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96272F3018BDD53100CA579E /* corn_happy.atlas */; };
+		96272F3318BDD53E00CA579E /* potato_happy.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96272F3218BDD53E00CA579E /* potato_happy.atlas */; };
 		9656B33118640014004B39E4 /* MyAVAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9656B33018640014004B39E4 /* MyAVAudioPlayer.m */; };
 		9656B334186411C0004B39E4 /* UITouch+FingerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9656B333186411C0004B39E4 /* UITouch+FingerTouch.m */; };
 		965AE93F1862863700FF3D39 /* ina_anger.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 965AE93A1862863700FF3D39 /* ina_anger.atlas */; };
@@ -170,6 +172,8 @@
 		9619E9B418BDA4DD00DB692A /* corn_fear.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = corn_fear.atlas; sourceTree = "<group>"; };
 		9619E9B618BDA4E400DB692A /* cucumber_join.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = cucumber_join.atlas; sourceTree = "<group>"; };
 		96272E9318BDC64B00CA579E /* qiqiu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiqiu@2x.png"; sourceTree = "<group>"; };
+		96272F3018BDD53100CA579E /* corn_happy.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = corn_happy.atlas; sourceTree = "<group>"; };
+		96272F3218BDD53E00CA579E /* potato_happy.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = potato_happy.atlas; sourceTree = "<group>"; };
 		9656B32F18640014004B39E4 /* MyAVAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAVAudioPlayer.h; sourceTree = "<group>"; };
 		9656B33018640014004B39E4 /* MyAVAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAVAudioPlayer.m; sourceTree = "<group>"; };
 		9656B332186411C0004B39E4 /* UITouch+FingerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+FingerTouch.h"; sourceTree = "<group>"; };
@@ -327,6 +331,8 @@
 		9619E99C18BD900700DB692A /* Potato */ = {
 			isa = PBXGroup;
 			children = (
+				96272F3218BDD53E00CA579E /* potato_happy.atlas */,
+				96272F3018BDD53100CA579E /* corn_happy.atlas */,
 				96EE731E18BDBA200009ED02 /* potato_fear.atlas */,
 				9619E9B618BDA4E400DB692A /* cucumber_join.atlas */,
 				9619E9B418BDA4DD00DB692A /* corn_fear.atlas */,
@@ -849,6 +855,7 @@
 				9619E9AA18BD904C00DB692A /* corn_walk.atlas in Resources */,
 				96EE731018BDB5D50009ED02 /* cucumber_netuarl@2x.png in Resources */,
 				965AE96B18628A5100FF3D39 /* cattot_next_ball.atlas in Resources */,
+				96272F3318BDD53E00CA579E /* potato_happy.atlas in Resources */,
 				965AE9791862961B00FF3D39 /* ball_kinds.atlas in Resources */,
 				967B2324185EE1F600C16B8E /* emotion_happy.mp3 in Resources */,
 				96EE731F18BDBA200009ED02 /* potato_fear.atlas in Resources */,
@@ -874,6 +881,7 @@
 				965AE97218628AE000FF3D39 /* raddish_cry.atlas in Resources */,
 				965AE97518628AE000FF3D39 /* radish_eat_3.atlas in Resources */,
 				96BDAABF18618DD300ED84E8 /* surprise.atlas in Resources */,
+				96272F3118BDD53100CA579E /* corn_happy.atlas in Resources */,
 				967B2242185EE10700C16B8E /* tomato_neutral@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

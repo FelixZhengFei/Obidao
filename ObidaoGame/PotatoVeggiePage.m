@@ -160,6 +160,9 @@
     [self fingerTouchOneActions];
   } else if (2 == _countsOfEmotionClick)
     [self fingerTouchTwoActions];
+  else if (3 == _countsOfEmotionClick)
+    [self fingerTouchThreeActions];
+    
 }
 
 - (void)fingerTouchOneActions {
@@ -191,6 +194,14 @@
   SKAction *action4 = [SKAction moveTo:CGPointMake(CGRectGetMidX(self.frame) * 1.62, CGRectGetMidY(self.frame)* 1.7) duration:0.62];
   SKAction *action5 = [SKAction moveTo:CGPointMake(CGRectGetMidX(self.frame) * 1.82, CGRectGetMidY(self.frame)* 1.8) duration:0.12];
   [balloon runAction:[SKAction sequence:@[action0,action1,action2,action3,action4,action5]]];
+}
+
+- (void)fingerTouchThreeActions {
+  SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
+  SKAction *cornHappyAction = [SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:VeggieCorn] count:5] ;
+  SKAction *potatoHappyAction = [SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:VeggiePotato] count:5];
+  [_cornInhabitantSprite runAction:cornHappyAction];
+  [_potatoInhabitantSprite runAction:[SKAction sequence:@[potatoHappyAction,chaneFingerTouchAbleAction]]];
 }
 
 @end
