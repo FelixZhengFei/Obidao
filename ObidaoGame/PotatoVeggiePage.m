@@ -70,39 +70,39 @@
 }
 
 - (void)configBackgroundImage {
-  self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+  self.backgroundColor = [SKColor colorWithRed:124/255 green:173/255 blue:58/255 alpha:1.0];
   SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:[ImageNameString getBackgroundImageName:VeggiePotato]];
   background.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
-  background.xScale = background.yScale = 0.4;
+  background.xScale = background.yScale = 0.8;
   [self addChild:background];
 }
 
 - (void)addTreeSprites {
   SKSpriteNode *tree1 = [SKSpriteNode spriteNodeWithImageNamed:@"tree1"];
   tree1.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.5);
-  tree1.xScale = tree1.yScale = 0.4;
+  tree1.xScale = tree1.yScale = 0.8;
   [self addChild:tree1];
   
   SKSpriteNode *tree2 = [SKSpriteNode spriteNodeWithImageNamed:@"tree2"];
   tree2.position = CGPointMake(0,CGRectGetMidY(self.frame));
-  tree2.xScale = tree2.yScale = 0.4;
+  tree2.xScale = tree2.yScale = 0.8;
   [self addChild:tree2];
   
   SKSpriteNode *tree3 = [SKSpriteNode spriteNodeWithImageNamed:@"tree3"];
   tree3.position = CGPointMake(CGRectGetMidX(self.frame) * 1.8,CGRectGetMidY(self.frame) * 1.2);
-  tree3.xScale = tree3.yScale = 0.4;
+  tree3.xScale = tree3.yScale = 0.8;
   [self addChild:tree3];
 }
 
 - (void)initThreeInhabitants {
   _cornInhabitantSprite = [self createEmotionSprite:VeggieCorn];
   _cornInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame) * 0.7,CGRectGetMidY(self.frame) * 1.1);
-  _cornInhabitantSprite.xScale = _cornInhabitantSprite.yScale = 1;
+  _cornInhabitantSprite.xScale = _cornInhabitantSprite.yScale = 0.8;
   [self addChild:_cornInhabitantSprite];
   
   _potatoInhabitantSprite = [self createEmotionSprite:VeggiePotato];
   _potatoInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.1);
-  _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 1;
+  _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 0.8;
   [self addChild:_potatoInhabitantSprite];
   
   _cucumberInhabitantSprite = [self createEmotionSprite:VeggieCucumber];
@@ -171,6 +171,26 @@
 }
 
 - (void)fingerTouchTwoActions {
+  SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
+  SKAction *cucumberJoinAction = [SKAction cucumberJion];
+//  SKAction *ballFlyoutAction = [SKAction potatoBallFlyOut];
+  SKAction *cornFearAction =[SKAction repeatAction:[SKAction scareAnimationWithInhabitantType:VeggieCorn] count:5] ;
+  SKAction *potatoFearAction = [SKAction repeatAction:[SKAction scareAnimationWithInhabitantType:VeggiePotato] count:5];
+  [_cucumberInhabitantSprite runAction:cucumberJoinAction];
+  [_cornInhabitantSprite runAction:cornFearAction];
+  [_potatoInhabitantSprite runAction:[SKAction sequence:@[potatoFearAction,chaneFingerTouchAbleAction]]];
+  
+  SKSpriteNode *balloon = [SKSpriteNode spriteNodeWithImageNamed:@"qiqiu"];
+  balloon.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 0.85);
+  balloon.xScale = balloon.yScale = 0.8;
+  [self addChild:balloon];
+  SKAction *action0 = [SKAction moveTo:CGPointMake(CGRectGetMidX(self.frame) * 1.2, CGRectGetMidY(self.frame) * 1.) duration:0.32];
+  SKAction *action1 = [SKAction moveTo:CGPointMake(CGRectGetMidX(self.frame) * 1.24, CGRectGetMidY(self.frame) * 1.24) duration:0.24];
+  SKAction *action2 = [SKAction moveTo:CGPointMake(CGRectGetMidX(self.frame) * 1.32, CGRectGetMidY(self.frame)* 1.35) duration:0.25];
+  SKAction *action3 = [SKAction moveTo:CGPointMake(CGRectGetMidX(self.frame) * 1.42, CGRectGetMidY(self.frame)* 1.56) duration:0.12];
+  SKAction *action4 = [SKAction moveTo:CGPointMake(CGRectGetMidX(self.frame) * 1.62, CGRectGetMidY(self.frame)* 1.7) duration:0.62];
+  SKAction *action5 = [SKAction moveTo:CGPointMake(CGRectGetMidX(self.frame) * 1.82, CGRectGetMidY(self.frame)* 1.8) duration:0.12];
+  [balloon runAction:[SKAction sequence:@[action0,action1,action2,action3,action4,action5]]];
 }
 
 @end

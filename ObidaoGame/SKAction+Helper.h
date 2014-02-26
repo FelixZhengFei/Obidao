@@ -29,5 +29,7 @@
 + (SKAction *)eggplantBallDown;
 + (SKAction *)cornSpriteWalks;
 + (SKAction *)potatoSpriteWalks;
++ (SKAction *)cucumberJion;
++ (SKAction *)potatoBallFlyOut;
 
 @end

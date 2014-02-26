@@ -227,6 +227,22 @@
       }
       return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
     }
+    case VeggiePotato: {
+      SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_fear"];
+      for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+        NSString* texture = [NSString stringWithFormat:@"Nobi_fear%04d",i];
+        [walkAnimFrames addObject:[atlas textureNamed:texture]];
+      }
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+    }
+    case VeggieCorn: {
+      SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"corn_fear"];
+      for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+        NSString* texture = [NSString stringWithFormat:@"momo_fear%04d",i];
+        [walkAnimFrames addObject:[atlas textureNamed:texture]];
+      }
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+    }
     default:
       return nil;
   }
@@ -342,5 +358,26 @@
   }
   return  [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO] count:6];
 }
+
++ (SKAction *)cucumberJion {
+  NSMutableArray *walkAnimFrames = [NSMutableArray array];
+  SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"cucumber_join"];
+  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+    NSString* texture = [NSString stringWithFormat:@"cucumber_join%04d",i];
+    [walkAnimFrames addObject:[atlas textureNamed:texture]];
+  }
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:NO restore:NO];
+}
+
++ (SKAction *)potatoBallFlyOut {
+  NSMutableArray *walkAnimFrames = [NSMutableArray array];
+  SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_fear"];
+  for (int i = 1; i < 14; i++) {
+    NSString* texture = [NSString stringWithFormat:@"potato_ball_fly%04d",i];
+    [walkAnimFrames addObject:[atlas textureNamed:texture]];
+  }
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO];
+}
+
 
 @end
