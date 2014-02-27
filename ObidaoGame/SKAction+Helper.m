@@ -438,8 +438,47 @@
     NSString* texture = [NSString stringWithFormat:@"nibo_fall%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.2 resize:NO restore:NO];
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:NO restore:NO];
 }
 
++ (SKAction *)cornFindPotato {
+  NSMutableArray *walkAnimFrames = [NSMutableArray array];
+  SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"corn_found_potato"];
+  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+    NSString* texture = [NSString stringWithFormat:@"momo_found%04d",i];
+    [walkAnimFrames addObject:[atlas textureNamed:texture]];
+  }
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO];
+}
+
++ (SKAction *)cornTicklePotato {
+  NSMutableArray *walkAnimFrames = [NSMutableArray array];
+  SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"corn_tickle"];
+  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+    NSString* texture = [NSString stringWithFormat:@"Momo_Tickle%04d",i];
+    [walkAnimFrames addObject:[atlas textureNamed:texture]];
+  }
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO];
+}
+
++ (SKAction *)cucumberFindPotato {
+  NSMutableArray *walkAnimFrames = [NSMutableArray array];
+  SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"cucumber_found_potato"];
+  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+    NSString* texture = [NSString stringWithFormat:@"gogo_found%04d",i];
+    [walkAnimFrames addObject:[atlas textureNamed:texture]];
+  }
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO];
+}
+
++ (SKAction *)cucumberTicklePotato {
+  NSMutableArray *walkAnimFrames = [NSMutableArray array];
+  SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"cucumber_tickle"];
+  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+    NSString* texture = [NSString stringWithFormat:@"Gogo_Tickle%04d",i];
+    [walkAnimFrames addObject:[atlas textureNamed:texture]];
+  }
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO];
+}
 
 @end

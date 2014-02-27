@@ -34,4 +34,9 @@
 + (SKAction *)potatoGetLost;
 + (SKAction *)potatoBeginRunning;
 + (SKAction *)potatoFallIntoGround;
++ (SKAction *)cornFindPotato;
++ (SKAction *)cornTicklePotato;
++ (SKAction *)cucumberFindPotato;
++ (SKAction *)cucumberTicklePotato;
+
 @end

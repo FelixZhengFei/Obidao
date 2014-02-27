@@ -24,7 +24,8 @@
   
   SKSpriteNode *_backButtonSprite;
   SKSpriteNode *_backgroundSprite;
-
+  SKSpriteNode *_wallowSprite;
+  
   SKSpriteNode *_potatoInhabitantSprite;
   SKSpriteNode *_cornInhabitantSprite;
   SKSpriteNode *_cucumberInhabitantSprite;
@@ -36,9 +37,7 @@
 
 - (id)initWithSize:(CGSize)size {
   if (self = [super initWithSize:size]) {
-    self.backgroundColor = [SKColor redColor];
-      self.backgroundColor = [SKColor colorWithRed:0.486 green:0.678 blue:0.227 alpha:1.0];
-
+    self.backgroundColor = [SKColor colorWithRed:0.486 green:0.678 blue:0.227 alpha:1.0];
     [self configBackgroundImage];
     [self configBackButtonItem];
     [self configView];
@@ -96,6 +95,12 @@
   tree3.position = CGPointMake(CGRectGetMidX(self.frame) *(-1) ,CGRectGetMidY(self.frame) * (- 0.1));
   tree3.xScale = tree3.yScale = 0.8;
   [_backgroundSprite addChild:tree3];
+  
+  _wallowSprite = [SKSpriteNode spriteNodeWithImageNamed:@"wallow"];
+  _wallowSprite.position = CGPointMake(CGRectGetMidX(self.frame) *0.1,CGRectGetMidY(self.frame) * (-.6));
+  _wallowSprite.xScale = _wallowSprite.yScale = 1;
+  _wallowSprite.hidden = YES;
+  [_backgroundSprite addChild:_wallowSprite];
 }
 
 - (void)initThreeInhabitants {
@@ -170,6 +175,10 @@
     [self fingerTouchFourActions];
   else if (5 == _countsOfEmotionClick)
     [self fingerTouchFiveActions];
+  else if (6 == _countsOfEmotionClick)
+    [self fingerTouchSixActions];
+  else if (7 == _countsOfEmotionClick)
+    [self fingerTouchSevenActions];
 }
 
 - (void)fingerTouchOneActions {
@@ -214,14 +223,17 @@
 - (void)fingerTouchFourActions {
   SKAction *hide = [SKAction fadeAlphaTo:0 duration:0.5];
   SKAction *hideOtherTwoSprites = [SKAction runBlock:^{
-    _cornInhabitantSprite.hidden = YES;
-    _cucumberInhabitantSprite.hidden = YES;
+//    _cornInhabitantSprite.hidden = YES;
+//    _cucumberInhabitantSprite.hidden = YES;
+    _backgroundSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.2);
+    _potatoInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.3);
+    _cornInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame) * .2,CGRectGetMidY(self.frame) * 0.8);
+    _cucumberInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame) *1.8,CGRectGetMidY(self.frame) * 1);
+    _wallowSprite.hidden = NO;
   }];
   SKAction *show = [SKAction fadeAlphaTo:1 duration:.25];
   [self runAction:[SKAction sequence:@[hide,hideOtherTwoSprites,show]] completion:^{
-    _backgroundSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.2);
     _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 1;
-    _potatoInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.3);
     SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
     SKAction *getLostAction = [SKAction potatoGetLost];
     SKAction *potatoCryAction = [SKAction repeatAction:[SKAction sadAnimationWithInhabitantType:VeggiePotato] count:3];
@@ -230,13 +242,48 @@
 }
 
 - (void)fingerTouchFiveActions {
-  SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
+  SKAction *chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
   SKAction *running = [SKAction repeatAction:[SKAction potatoBeginRunning] count:3];
-  SKAction *moveTo = [SKAction moveToY:CGRectGetMidY(self.frame) duration:2];
+  SKAction *moveTo = [SKAction moveToY:CGRectGetMidY(self.frame) * 0.9 duration:2];
   SKAction *unionAction = [SKAction group:@[running,moveTo]];
   SKAction *fallIntoGround = [SKAction potatoFallIntoGround];
   SKAction *potatoDisgust = [SKAction disgustAnimationWithInhabitantType:VeggiePotato];
   [_potatoInhabitantSprite runAction:[SKAction sequence:@[unionAction,fallIntoGround,potatoDisgust,chaneFingerTouchAbleAction]]];
+}
+
+- (void)fingerTouchSixActions {
+  SKAction *chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
+  SKAction *cornFindPotato = [SKAction cornFindPotato];
+  SKAction *cornTicklePotato = [SKAction repeatAction:[SKAction cornTicklePotato] count:5];
+  SKAction *cornMoveTo = [SKAction moveTo:CGPointMake(CGRectGetMidX(self.frame) * .7,CGRectGetMidY(self.frame) * 1) duration:0.6];
+  SKAction *cornUnionAction = [SKAction group:@[cornFindPotato,cornMoveTo]];
+  
+  SKAction *cucumberFindPotato = [SKAction cucumberFindPotato];
+  SKAction *cucumberTicklePotato = [SKAction repeatAction:[SKAction cucumberTicklePotato] count:5] ;
+  SKAction *cucumberMoveTo = [SKAction moveTo:CGPointMake(CGRectGetMidX(self.frame) *1.3,CGRectGetMidY(self.frame) * 1) duration:0.6];
+  SKAction *cucumberUnionAction = [SKAction group:@[cucumberMoveTo,cucumberFindPotato]];
+  _cornInhabitantSprite.hidden = NO;
+  _cucumberInhabitantSprite.hidden = NO;
+  
+//  _cornInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame) * .8,CGRectGetMidY(self.frame) * 0.9);
+//  _cucumberInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame) *1.3,CGRectGetMidY(self.frame) * 0.9);
+
+  [_cucumberInhabitantSprite runAction:[SKAction sequence:@[cucumberUnionAction,cucumberTicklePotato]]];
+  [_cornInhabitantSprite runAction:[SKAction sequence:@[cornUnionAction,cornTicklePotato,chaneFingerTouchAbleAction]]];
+  [_potatoInhabitantSprite runAction:[SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:VeggiePotato] count:5]];
+}
+
+- (void)fingerTouchSevenActions {
+  SKAction *hide = [SKAction fadeAlphaTo:0 duration:0.5];
+  SKAction *removeAll = [SKAction runBlock:^{
+    [self removeAllChildren];
+  }];
+  SKAction *show = [SKAction fadeAlphaTo:1 duration:.25];
+  [self runAction:[SKAction sequence:@[hide,removeAll,show]] completion:^{
+    [self configBackgroundImage];
+    [self configBackButtonItem];
+    [self configView];
+  }];
 }
 
 @end
