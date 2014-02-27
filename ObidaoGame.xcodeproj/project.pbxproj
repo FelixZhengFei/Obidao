@@ -148,6 +148,9 @@
 		967B236B185EE45500C16B8E /* EggplantVeggiePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 967B2369185EE45500C16B8E /* EggplantVeggiePage.m */; };
 		96BDAABF18618DD300ED84E8 /* surprise.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAABE18618DD300ED84E8 /* surprise.atlas */; };
 		96BDAAC118618E2200ED84E8 /* ina_paly_ball.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAAC018618E2200ED84E8 /* ina_paly_ball.atlas */; };
+		96D0B60318BEDD60007B5F0F /* potato_digust.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96D0B60218BEDD60007B5F0F /* potato_digust.atlas */; };
+		96D0B60518BEDD78007B5F0F /* potato_fall_intoground.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96D0B60418BEDD78007B5F0F /* potato_fall_intoground.atlas */; };
+		96D0B60718BEDD81007B5F0F /* potato_running.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96D0B60618BEDD81007B5F0F /* potato_running.atlas */; };
 		96EE730F18BDB5D50009ED02 /* corn_netuarl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE730C18BDB5D50009ED02 /* corn_netuarl@2x.png */; };
 		96EE731018BDB5D50009ED02 /* cucumber_netuarl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE730D18BDB5D50009ED02 /* cucumber_netuarl@2x.png */; };
 		96EE731118BDB5D50009ED02 /* potato_netuarl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EE730E18BDB5D50009ED02 /* potato_netuarl@2x.png */; };
@@ -301,6 +304,9 @@
 		967B2369185EE45500C16B8E /* EggplantVeggiePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EggplantVeggiePage.m; sourceTree = "<group>"; };
 		96BDAABE18618DD300ED84E8 /* surprise.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = surprise.atlas; sourceTree = "<group>"; };
 		96BDAAC018618E2200ED84E8 /* ina_paly_ball.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ina_paly_ball.atlas; sourceTree = "<group>"; };
+		96D0B60218BEDD60007B5F0F /* potato_digust.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = potato_digust.atlas; sourceTree = "<group>"; };
+		96D0B60418BEDD78007B5F0F /* potato_fall_intoground.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = potato_fall_intoground.atlas; sourceTree = "<group>"; };
+		96D0B60618BEDD81007B5F0F /* potato_running.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = potato_running.atlas; sourceTree = "<group>"; };
 		96EE730C18BDB5D50009ED02 /* corn_netuarl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corn_netuarl@2x.png"; sourceTree = "<group>"; };
 		96EE730D18BDB5D50009ED02 /* cucumber_netuarl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cucumber_netuarl@2x.png"; sourceTree = "<group>"; };
 		96EE730E18BDB5D50009ED02 /* potato_netuarl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "potato_netuarl@2x.png"; sourceTree = "<group>"; };
@@ -335,6 +341,9 @@
 		9619E99C18BD900700DB692A /* Potato */ = {
 			isa = PBXGroup;
 			children = (
+				96D0B60618BEDD81007B5F0F /* potato_running.atlas */,
+				96D0B60418BEDD78007B5F0F /* potato_fall_intoground.atlas */,
+				96D0B60218BEDD60007B5F0F /* potato_digust.atlas */,
 				96272F3618BDDACA00CA579E /* potato_lost.atlas */,
 				96272F3418BDDAC300CA579E /* potato_cry.atlas */,
 				96272F3218BDD53E00CA579E /* potato_happy.atlas */,
@@ -844,6 +853,7 @@
 				967B2231185EE0E300C16B8E /* button_back_ipadhd@2x.png in Resources */,
 				965AE9431862863700FF3D39 /* ina_high.atlas in Resources */,
 				965AE956186288A100FF3D39 /* tomato_happy.atlas in Resources */,
+				96D0B60318BEDD60007B5F0F /* potato_digust.atlas in Resources */,
 				965AE97B1862967500FF3D39 /* cattot_happy_play.atlas in Resources */,
 				967B223E185EE10700C16B8E /* eggplant_netuarl@2x.png in Resources */,
 				965AE95C1862895000FF3D39 /* onion_cry.atlas in Resources */,
@@ -863,6 +873,7 @@
 				9619E9AA18BD904C00DB692A /* corn_walk.atlas in Resources */,
 				96EE731018BDB5D50009ED02 /* cucumber_netuarl@2x.png in Resources */,
 				965AE96B18628A5100FF3D39 /* cattot_next_ball.atlas in Resources */,
+				96D0B60718BEDD81007B5F0F /* potato_running.atlas in Resources */,
 				96272F3318BDD53E00CA579E /* potato_happy.atlas in Resources */,
 				965AE9791862961B00FF3D39 /* ball_kinds.atlas in Resources */,
 				967B2324185EE1F600C16B8E /* emotion_happy.mp3 in Resources */,
@@ -889,6 +900,7 @@
 				965AE97218628AE000FF3D39 /* raddish_cry.atlas in Resources */,
 				965AE97518628AE000FF3D39 /* radish_eat_3.atlas in Resources */,
 				96BDAABF18618DD300ED84E8 /* surprise.atlas in Resources */,
+				96D0B60518BEDD78007B5F0F /* potato_fall_intoground.atlas in Resources */,
 				96272F3118BDD53100CA579E /* corn_happy.atlas in Resources */,
 				967B2242185EE10700C16B8E /* tomato_neutral@2x.png in Resources */,
 			);

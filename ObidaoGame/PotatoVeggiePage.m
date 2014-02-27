@@ -168,6 +168,8 @@
     [self fingerTouchThreeActions];
   else if (4 == _countsOfEmotionClick)
     [self fingerTouchFourActions];
+  else if (5 == _countsOfEmotionClick)
+    [self fingerTouchFiveActions];
 }
 
 - (void)fingerTouchOneActions {
@@ -219,11 +221,22 @@
   [self runAction:[SKAction sequence:@[hide,hideOtherTwoSprites,show]] completion:^{
     _backgroundSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.2);
     _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 1;
+    _potatoInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.3);
     SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
     SKAction *getLostAction = [SKAction potatoGetLost];
-    SKAction *potatoCryAction = [SKAction repeatAction:[SKAction sadAnimationWithInhabitantType:VeggiePotato] count:5];
+    SKAction *potatoCryAction = [SKAction repeatAction:[SKAction sadAnimationWithInhabitantType:VeggiePotato] count:3];
     [_potatoInhabitantSprite runAction:[SKAction sequence:@[getLostAction,potatoCryAction,chaneFingerTouchAbleAction]]];
   }];
+}
+
+- (void)fingerTouchFiveActions {
+  SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
+  SKAction *running = [SKAction repeatAction:[SKAction potatoBeginRunning] count:3];
+  SKAction *moveTo = [SKAction moveToY:CGRectGetMidY(self.frame) duration:2];
+  SKAction *unionAction = [SKAction group:@[running,moveTo]];
+  SKAction *fallIntoGround = [SKAction potatoFallIntoGround];
+  SKAction *potatoDisgust = [SKAction disgustAnimationWithInhabitantType:VeggiePotato];
+  [_potatoInhabitantSprite runAction:[SKAction sequence:@[unionAction,fallIntoGround,potatoDisgust,chaneFingerTouchAbleAction]]];
 }
 
 @end

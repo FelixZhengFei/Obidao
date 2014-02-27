@@ -32,4 +32,6 @@
 + (SKAction *)cucumberJion;
 + (SKAction *)potatoBallFlyOut;
 + (SKAction *)potatoGetLost;
++ (SKAction *)potatoBeginRunning;
++ (SKAction *)potatoFallIntoGround;
 @end
