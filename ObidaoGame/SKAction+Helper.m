@@ -378,7 +378,7 @@
     NSString* texture = [NSString stringWithFormat:@"Nobi_walk%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO] count:5];
+  return  [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.05 resize:NO restore:NO] count:5];
 }
 
 + (SKAction *)cornSpriteWalks {
@@ -403,9 +403,9 @@
 
 + (SKAction *)potatoBallFlyOut {
   NSMutableArray *walkAnimFrames = [NSMutableArray array];
-  SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_fear"];
+  SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"patato_balloon_fly"];
   for (int i = 1; i < atlas.textureNames.count + 1; i++) {
-    NSString* texture = [NSString stringWithFormat:@"potato_ball_fly%04d",i];
+    NSString* texture = [NSString stringWithFormat:@"balloon_fly%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
   return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO];

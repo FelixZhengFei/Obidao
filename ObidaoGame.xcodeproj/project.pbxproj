@@ -20,6 +20,7 @@
 		96272F3318BDD53E00CA579E /* potato_happy.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96272F3218BDD53E00CA579E /* potato_happy.atlas */; };
 		96272F3518BDDAC400CA579E /* potato_cry.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96272F3418BDDAC300CA579E /* potato_cry.atlas */; };
 		96272F3718BDDACA00CA579E /* potato_lost.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96272F3618BDDACA00CA579E /* potato_lost.atlas */; };
+		9628D66A18C7214900A83162 /* patato_balloon_fly.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9628D66918C7214900A83162 /* patato_balloon_fly.atlas */; };
 		9656B33118640014004B39E4 /* MyAVAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9656B33018640014004B39E4 /* MyAVAudioPlayer.m */; };
 		9656B334186411C0004B39E4 /* UITouch+FingerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9656B333186411C0004B39E4 /* UITouch+FingerTouch.m */; };
 		965AE93F1862863700FF3D39 /* ina_anger.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 965AE93A1862863700FF3D39 /* ina_anger.atlas */; };
@@ -186,6 +187,7 @@
 		96272F3218BDD53E00CA579E /* potato_happy.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = potato_happy.atlas; sourceTree = "<group>"; };
 		96272F3418BDDAC300CA579E /* potato_cry.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = potato_cry.atlas; sourceTree = "<group>"; };
 		96272F3618BDDACA00CA579E /* potato_lost.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = potato_lost.atlas; sourceTree = "<group>"; };
+		9628D66918C7214900A83162 /* patato_balloon_fly.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = patato_balloon_fly.atlas; sourceTree = "<group>"; };
 		9656B32F18640014004B39E4 /* MyAVAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAVAudioPlayer.h; sourceTree = "<group>"; };
 		9656B33018640014004B39E4 /* MyAVAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAVAudioPlayer.m; sourceTree = "<group>"; };
 		9656B332186411C0004B39E4 /* UITouch+FingerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+FingerTouch.h"; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 		9619E99C18BD900700DB692A /* Potato */ = {
 			isa = PBXGroup;
 			children = (
+				9628D66918C7214900A83162 /* patato_balloon_fly.atlas */,
 				96D0B61018BF14EC007B5F0F /* corn_found_potato.atlas */,
 				96D0B60C18BF105E007B5F0F /* cucumber_tickle.atlas */,
 				96D0B60A18BF1054007B5F0F /* cucumber_found_potato.atlas */,
@@ -918,6 +921,7 @@
 				9619E9A818BD904300DB692A /* potato_walk.atlas in Resources */,
 				965AE97218628AE000FF3D39 /* raddish_cry.atlas in Resources */,
 				96D0B61118BF14EC007B5F0F /* corn_found_potato.atlas in Resources */,
+				9628D66A18C7214900A83162 /* patato_balloon_fly.atlas in Resources */,
 				965AE97518628AE000FF3D39 /* radish_eat_3.atlas in Resources */,
 				96BDAABF18618DD300ED84E8 /* surprise.atlas in Resources */,
 				96D0B60518BEDD78007B5F0F /* potato_fall_intoground.atlas in Resources */,
