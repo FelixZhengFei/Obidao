@@ -19,7 +19,7 @@
         NSString* texture = [NSString stringWithFormat:@"foxy_swing%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieTomato: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"tomato_happy"];
@@ -27,7 +27,7 @@
         NSString* texture = [NSString stringWithFormat:@"zola_hoappy%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieCarot: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"carrot_happy"];
@@ -35,7 +35,7 @@
         NSString* texture = [NSString stringWithFormat:@"carrot_happy%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieRadish: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"radish_happy_poor"];
@@ -43,7 +43,7 @@
         NSString* texture = [NSString stringWithFormat:@"godas_happy%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieEggplant: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"ina_paly_ball"];
@@ -51,7 +51,7 @@
         NSString* texture = [NSString stringWithFormat:@"ina_paly_ball%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieCorn: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"corn_happy"];
@@ -59,7 +59,7 @@
         NSString* texture = [NSString stringWithFormat:@"Momo_happy%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggiePotato: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_happy"];
@@ -67,7 +67,7 @@
         NSString* texture = [NSString stringWithFormat:@"Nobi_happy%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     default: {
       return nil;
@@ -85,7 +85,7 @@
         NSString* texture = [NSString stringWithFormat:@"foxy_swing_anger%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieTomato: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"tomato_anger"];
@@ -93,7 +93,7 @@
         NSString* texture = [NSString stringWithFormat:@"zola_anger%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieCarot: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"cattot_next_ball"];
@@ -101,7 +101,7 @@
         NSString* texture = [NSString stringWithFormat:@"carrot_anohter_ballon%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieEggplant: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"ina_anger"];
@@ -109,7 +109,7 @@
         NSString* texture = [NSString stringWithFormat:@"ina_anger%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     default:
       break;
@@ -126,7 +126,7 @@
         NSString* texture = [NSString stringWithFormat:@"foxy_swing_earth%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieTomato: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"tomato_cry"];
@@ -134,7 +134,7 @@
         NSString* texture = [NSString stringWithFormat:@"zola_cry%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieCarot: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"ballon_deceare"];
@@ -142,7 +142,7 @@
         NSString* texture = [NSString stringWithFormat:@"carrot_ballon_deceare%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieRadish: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"raddish_cry"];
@@ -150,7 +150,7 @@
         NSString* texture = [NSString stringWithFormat:@"godas_cry%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieEggplant: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"ina_cry"];
@@ -158,7 +158,7 @@
         NSString* texture = [NSString stringWithFormat:@"ina_cry%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggiePotato: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_cry"];
@@ -166,7 +166,7 @@
         NSString* texture = [NSString stringWithFormat:@"Nobi_cry%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     default:
       return nil;
@@ -183,7 +183,7 @@
         NSString* texture = [NSString stringWithFormat:@"zola_jump_surprise%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieCarot: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"carrot_surprise"];
@@ -191,7 +191,7 @@
         NSString* texture = [NSString stringWithFormat:@"carrot_surprise%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieRadish: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"radish_happy"];
@@ -199,7 +199,7 @@
         NSString* texture = [NSString stringWithFormat:@"radish_happy_%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieEggplant: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"surprise"];
@@ -207,7 +207,7 @@
         NSString* texture = [NSString stringWithFormat:@"ina_surprise%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     default:
       return nil;
@@ -224,7 +224,7 @@
         NSString* texture = [NSString stringWithFormat:@"carrot_blowing_balloons%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     default:
       return nil;
@@ -241,7 +241,7 @@
         NSString* texture = [NSString stringWithFormat:@"zola_fear%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.12 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieCarot: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"carrot_scare"];
@@ -249,7 +249,7 @@
         NSString* texture = [NSString stringWithFormat:@"nunno_scared%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggiePotato: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_fear"];
@@ -257,7 +257,7 @@
         NSString* texture = [NSString stringWithFormat:@"Nobi_fear%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggieCorn: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"corn_fear"];
@@ -265,7 +265,7 @@
         NSString* texture = [NSString stringWithFormat:@"momo_fear%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     default:
       return nil;
@@ -282,7 +282,7 @@
         NSString* texture = [NSString stringWithFormat:@"godas_eat_3%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     case VeggiePotato: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_digust"];
@@ -290,7 +290,7 @@
         NSString* texture = [NSString stringWithFormat:@"nobi_disgust%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.28 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
     }
     default:
       return nil;
@@ -305,7 +305,7 @@
     NSString* texture = [NSString stringWithFormat:@"foxy_swing_earth%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.12 resize:YES restore:NO] count:10];
+  return [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO] count:10];
 }
 
 + (id)carrotPlayBallon:(BOOL)isBlowing {
@@ -316,7 +316,7 @@
       NSString* texture = [NSString stringWithFormat:@"blowing_balloon%d",i];
       [walkAnimFrames addObject:[atlas textureNamed:texture]];
     }
-    return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.8 resize:YES restore:NO];
+    return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
   }
   return nil;
 }
@@ -328,7 +328,7 @@
     NSString* texture = [NSString stringWithFormat:@"godas_eat_1%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.15 resize:YES restore:NO];
+  return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
 }
 
 + (SKAction *)radishEattingSand {
@@ -338,7 +338,7 @@
     NSString* texture = [NSString stringWithFormat:@"godas_eat_2%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.1 resize:YES restore:NO] count:3];
+  return  [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO] count:3];
 }
 
 + (SKAction *)eggplantBallDisappear {
@@ -348,7 +348,7 @@
     NSString* texture = [NSString stringWithFormat:@"ina_high%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
 }
 
 + (SKAction *)eggplantBallHitHead {
@@ -358,7 +358,7 @@
     NSString* texture = [NSString stringWithFormat:@"ina_head%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:YES restore:NO];
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
 }
 
 + (SKAction *)eggplantBallDown {
@@ -368,7 +368,7 @@
     NSString* texture = [NSString stringWithFormat:@"ina_happy_down%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.1 resize:YES restore:NO];
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
 }
 
 + (SKAction *)potatoSpriteWalks {
@@ -378,7 +378,7 @@
     NSString* texture = [NSString stringWithFormat:@"Nobi_walk%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:NO restore:NO] count:5];
+  return  [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO] count:5];
 }
 
 + (SKAction *)cornSpriteWalks {
@@ -398,7 +398,7 @@
     NSString* texture = [NSString stringWithFormat:@"cucumber_join%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:NO restore:NO];
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO];
 }
 
 + (SKAction *)potatoBallFlyOut {
@@ -418,7 +418,7 @@
     NSString* texture = [NSString stringWithFormat:@"Nobi_lost%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.16 resize:NO restore:NO];
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO];
 }
 
 + (SKAction *)potatoBeginRunning {
@@ -428,7 +428,7 @@
     NSString* texture = [NSString stringWithFormat:@"nobi_run%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:NO restore:NO];
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO];
 }
 
 + (SKAction *)potatoFallIntoGround {
@@ -438,7 +438,7 @@
     NSString* texture = [NSString stringWithFormat:@"nibo_fall%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.08 resize:NO restore:NO];
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.05 resize:NO restore:NO];
 }
 
 + (SKAction *)cornFindPotato {

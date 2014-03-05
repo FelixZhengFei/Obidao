@@ -184,8 +184,13 @@
 
 - (void)fingerTouchOneActions {
   SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
-  SKAction *move = [SKAction moveToY:CGRectGetMidY(self.frame) * 0.85 duration:4];
-  SKAction *unionAction = [SKAction sequence:@[move,chaneFingerTouchAbleAction]];
+  SKAction *move = [SKAction moveToY:CGRectGetMidY(self.frame) * 0.9 duration:1.5];
+  SKAction *stopAction = [SKAction runBlock:^{
+    [_cornInhabitantSprite removeAllActions];
+    [_potatoInhabitantSprite removeAllActions];
+  }];
+  SKAction *unionAction = [SKAction sequence:@[move,chaneFingerTouchAbleAction,stopAction]];
+  
   [_cornInhabitantSprite runAction:[SKAction group:@[unionAction,[SKAction cornSpriteWalks]]]];
   [_potatoInhabitantSprite runAction:[SKAction group:@[unionAction,[SKAction potatoSpriteWalks]]]];
 }
@@ -199,7 +204,7 @@
   
   _cornInhabitantSprite.xScale = _cornInhabitantSprite.yScale = 1;
   _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 1;
-  _cucumberInhabitantSprite.xScale = _cucumberInhabitantSprite.yScale = 0.5;
+  _cucumberInhabitantSprite.xScale = _cucumberInhabitantSprite.yScale = 0.6;
   
   [_cornInhabitantSprite runAction:cornFearAction];
   [_potatoInhabitantSprite runAction:[SKAction sequence:@[potatoFearAction,chaneFingerTouchAbleAction]]];
@@ -226,6 +231,7 @@
   SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
   SKAction *cornHappyAction = [SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:VeggieCorn] count:5] ;
   SKAction *potatoHappyAction = [SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:VeggiePotato] count:5];
+  _potatoInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 0.8);
   [_cornInhabitantSprite runAction:cornHappyAction];
   [_potatoInhabitantSprite runAction:[SKAction sequence:@[potatoHappyAction,chaneFingerTouchAbleAction]]];
 }
@@ -261,8 +267,8 @@
   }];
   _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 1.2;
 
-  SKAction *running = [SKAction repeatAction:[SKAction potatoBeginRunning] count:2];
-  SKAction *moveTo = [SKAction moveToY:CGRectGetMidY(self.frame) * 0.9 duration:2];
+  SKAction *running = [SKAction potatoBeginRunning];
+  SKAction *moveTo = [SKAction moveToY:CGRectGetMidY(self.frame) * 0.9 duration:1];
 
   SKAction *unionAction = [SKAction group:@[running,moveTo]];
   SKAction *fallIntoGround = [SKAction potatoFallIntoGround];
@@ -286,13 +292,18 @@
   SKAction *cucumberFindPotato = [SKAction cucumberFindPotato];
   SKAction *cucumberTicklePotato = [SKAction repeatAction:[SKAction cucumberTicklePotato] count:5] ;
   SKAction *cucumberMoveTo = [SKAction moveTo:CGPointMake(CGRectGetMidX(self.frame) *1.3,CGRectGetMidY(self.frame) * 1) duration:0.6];
+  SKAction *cucumberScale =  [SKAction runBlock:^{
+    _cucumberInhabitantSprite.xScale = _cucumberInhabitantSprite.yScale = 0.55;
+  }];
+  _cucumberInhabitantSprite.xScale = _cucumberInhabitantSprite.yScale = 0.75;
+
   SKAction *cucumberUnionAction = [SKAction group:@[cucumberMoveTo,cucumberFindPotato]];
   _cornInhabitantSprite.hidden = NO;
   _cucumberInhabitantSprite.hidden = NO;
   
-  [_cucumberInhabitantSprite runAction:[SKAction sequence:@[cucumberUnionAction,cucumberTicklePotato]]];
   [_cornInhabitantSprite runAction:[SKAction sequence:@[cornUnionAction,cornScale,cornTicklePotato,chaneFingerTouchAbleAction]]];
   [_potatoInhabitantSprite runAction:[SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:VeggiePotato] count:5]];
+  [_cucumberInhabitantSprite runAction:[SKAction sequence:@[cucumberUnionAction,cucumberScale,cucumberTicklePotato]]];
 }
 
 - (void)fingerTouchSevenActions {
