@@ -146,8 +146,6 @@
 		967B2342185EE36400C16B8E /* EmotionPageControllerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 967B2340185EE36400C16B8E /* EmotionPageControllerScene.m */; };
 		967B236A185EE45500C16B8E /* EggplantVeggiePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 967B2369185EE45500C16B8E /* EggplantVeggiePage.m */; };
 		967B236B185EE45500C16B8E /* EggplantVeggiePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 967B2369185EE45500C16B8E /* EggplantVeggiePage.m */; };
-		96BC1A1E18C6C26600B4ACD2 /* haku.mov in Resources */ = {isa = PBXBuildFile; fileRef = 96BC1A1D18C6C26600B4ACD2 /* haku.mov */; };
-		96BC1A2018C6C3E700B4ACD2 /* droplet@2x.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96BC1A1F18C6C3E700B4ACD2 /* droplet@2x.mp4 */; };
 		96BDAABF18618DD300ED84E8 /* surprise.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAABE18618DD300ED84E8 /* surprise.atlas */; };
 		96BDAAC118618E2200ED84E8 /* ina_paly_ball.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAAC018618E2200ED84E8 /* ina_paly_ball.atlas */; };
 		96D0B60318BEDD60007B5F0F /* potato_digust.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96D0B60218BEDD60007B5F0F /* potato_digust.atlas */; };
@@ -309,8 +307,6 @@
 		967B2340185EE36400C16B8E /* EmotionPageControllerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionPageControllerScene.m; sourceTree = "<group>"; };
 		967B2368185EE45500C16B8E /* EggplantVeggiePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EggplantVeggiePage.h; sourceTree = "<group>"; };
 		967B2369185EE45500C16B8E /* EggplantVeggiePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EggplantVeggiePage.m; sourceTree = "<group>"; };
-		96BC1A1D18C6C26600B4ACD2 /* haku.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = haku.mov; sourceTree = "<group>"; };
-		96BC1A1F18C6C3E700B4ACD2 /* droplet@2x.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "droplet@2x.mp4"; sourceTree = "<group>"; };
 		96BDAABE18618DD300ED84E8 /* surprise.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = surprise.atlas; sourceTree = "<group>"; };
 		96BDAAC018618E2200ED84E8 /* ina_paly_ball.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ina_paly_ball.atlas; sourceTree = "<group>"; };
 		96D0B60218BEDD60007B5F0F /* potato_digust.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = potato_digust.atlas; sourceTree = "<group>"; };
@@ -422,8 +418,6 @@
 			children = (
 				965AE98B1862B99900FF3D39 /* PotatoVeggiePage.h */,
 				965AE98C1862B99900FF3D39 /* PotatoVeggiePage.m */,
-				96BC1A1D18C6C26600B4ACD2 /* haku.mov */,
-				96BC1A1F18C6C3E700B4ACD2 /* droplet@2x.mp4 */,
 			);
 			name = Potato;
 			sourceTree = "<group>";
@@ -926,11 +920,9 @@
 				96D0B61118BF14EC007B5F0F /* corn_found_potato.atlas in Resources */,
 				965AE97518628AE000FF3D39 /* radish_eat_3.atlas in Resources */,
 				96BDAABF18618DD300ED84E8 /* surprise.atlas in Resources */,
-				96BC1A2018C6C3E700B4ACD2 /* droplet@2x.mp4 in Resources */,
 				96D0B60518BEDD78007B5F0F /* potato_fall_intoground.atlas in Resources */,
 				96272F3118BDD53100CA579E /* corn_happy.atlas in Resources */,
 				967B2242185EE10700C16B8E /* tomato_neutral@2x.png in Resources */,
-				96BC1A1E18C6C26600B4ACD2 /* haku.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
