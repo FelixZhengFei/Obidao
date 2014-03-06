@@ -241,7 +241,7 @@
         NSString* texture = [NSString stringWithFormat:@"zola_fear%04d",i];
         [walkAnimFrames addObject:[atlas textureNamed:texture]];
       }
-      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
+      return [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.07 resize:YES restore:NO];
     }
     case VeggieCarot: {
       SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"carrot_scare"];
@@ -305,7 +305,7 @@
     NSString* texture = [NSString stringWithFormat:@"foxy_swing_earth%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO] count:10];
+  return [SKAction repeatAction:[SKAction animateWithTextures:walkAnimFrames timePerFrame:0.09 resize:YES restore:NO] count:4];
 }
 
 + (id)carrotPlayBallon:(BOOL)isBlowing {

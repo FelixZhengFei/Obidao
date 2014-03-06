@@ -46,7 +46,7 @@
 }
 
 + (SKSpriteNode *)createInhabitantSprite:(Inhabitant *)inhabitant {
-  SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:[self inhabitantImageNameString:inhabitant.veggieType]];
+  SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImageNamed:[self inhabitantImageNameString:inhabitant.veggieType]]];
   if (IS_IPID) {
     sprite.xScale = sprite.yScale = 150.0 / sprite.size.width;
   }

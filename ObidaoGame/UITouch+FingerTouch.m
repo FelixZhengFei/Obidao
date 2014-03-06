@@ -16,8 +16,7 @@
       [_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Happy];
     }]]];
     SKAction *action0 = [SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:_currentVeggieType] count:5] ;
-    SKAction *action1 = [SKAction runBlock:^{
-      [self fingerClickAtTwoTime:_currentVeggieType soundPlay:_soundPlayer];}];
+    SKAction *action1 = [self fingerClickAtTwoTime:_currentVeggieType soundPlay:_soundPlayer];
     return [SKAction group:@[soundAction,[SKAction sequence:@[action0,action1]]]];
     
   } else if (_currentVeggieType == VeggieTomato) {
@@ -167,7 +166,7 @@
     SKAction *soundAction = [SKAction sequence:@[[SKAction waitForDuration:1.0],[SKAction runBlock:^{
       [_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Fear];
     }]]];
-    SKAction *action0 = [SKAction repeatAction:[SKAction scareAnimationWithInhabitantType:_currentVeggieType] count:5];
+    SKAction *action0 = [SKAction repeatAction:[SKAction scareAnimationWithInhabitantType:_currentVeggieType] count:4];
     SKAction *action1 = [SKAction runBlock:^{
       [_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Happy];
     }];

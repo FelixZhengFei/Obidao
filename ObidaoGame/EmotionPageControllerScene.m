@@ -45,7 +45,7 @@
 }
 
 - (void)addBackButtonItem {
-  _backButtonSprite = [SKSpriteNode spriteNodeWithImageNamed:[ImageNameString getStringOfImageFileWithImageType:Image_Button_Back]];
+  _backButtonSprite = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImageNamed:[ImageNameString getStringOfImageFileWithImageType:Image_Button_Back]]];
   if (IS_IPID) {
     _backButtonSprite.position = CGPointMake(self.size.width * 0.1, self.size.height * 0.75);
   } else {
@@ -60,6 +60,10 @@
   background.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
   background.xScale = background.yScale = [ScreenScaleFactor screenScaleFactorForDevices:10];
   [self addChild:background];
+}
+
+- (void)reloadTextureAtlasImages:(VeggieType)veggieType {
+
 }
 
 - (void)initAllThingsOfInhabitantPage:(VeggieType)veggieType {
@@ -200,6 +204,9 @@
   }
 }
 
-
+- (void)willMoveFromView:(SKView *)view {
+  [self removeAllActions];
+  [self removeAllChildren];
+}
 
 @end

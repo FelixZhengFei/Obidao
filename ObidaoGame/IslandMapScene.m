@@ -45,10 +45,9 @@
 
 - (void)addBackground {
   SKSpriteNode *_backgroundIslandMap;
-  _backgroundIslandMap = [SKSpriteNode spriteNodeWithImageNamed:@"island_map_ipadhd.png"];
+  _backgroundIslandMap = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImageNamed:@"island_map_ipadhd"]];
   _backgroundIslandMap.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
-  _backgroundIslandMap.xScale = _backgroundIslandMap.yScale = [ScreenScaleFactor screenScaleFactorForDevices:10];
-  NSLog(@"_backgroundIslandMap = %@",NSStringFromCGPoint(_backgroundIslandMap.position));
+  _backgroundIslandMap.xScale = _backgroundIslandMap.yScale = 2;
   [self addChild:_backgroundIslandMap];
 }
 
@@ -101,7 +100,6 @@
   UITouch *touch = [touches anyObject];
   if ([touch tapCount] == 1) {
     CGPoint location = [touch locationInNode:self];
-    NSLog(@"locotion = %@",NSStringFromCGPoint(location));
     if ([self isEggplantInhabitantSpriteTouched:location]) {
       [self removeAllActions];
       EggplantVeggiePage *veggiePage = [[EggplantVeggiePage alloc] initWithSize:self.size];
@@ -140,6 +138,12 @@
     }
   }
 }
+
+- (void)willMoveFromView:(SKView *)view {
+  [self removeAllActions];
+  [self removeAllChildren];
+}
+
 
 
 @end

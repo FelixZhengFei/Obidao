@@ -46,7 +46,6 @@
   NSInteger currentVeggieIndex = 0;
   CGFloat currentDistance = 999999.0;
   CGSize screenSize  = [[UIScreen mainScreen] bounds].size;
-  NSLog(@"screenSize =%@",NSStringFromCGSize(screenSize));
   for (int i = 0; i < [_veggieCoordinates count]; i++) {
     CGPoint veggiePoint = [CoordinateSystem fixedPoint:[[_veggieCoordinates objectAtIndex:i] CGPointValue] withSize:screenSize];
     CGFloat distance = [MathTool distanceFrom:point to:veggiePoint];
