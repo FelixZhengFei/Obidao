@@ -101,40 +101,59 @@
   if ([touch tapCount] == 1) {
     CGPoint location = [touch locationInNode:self];
     if ([self isEggplantInhabitantSpriteTouched:location]) {
-      [self removeAllActions];
-      EggplantVeggiePage *veggiePage = [[EggplantVeggiePage alloc] initWithSize:self.size];
-      veggiePage.scaleMode = SKSceneScaleModeAspectFill;
-      [self.view presentScene:veggiePage];
+      [self runUpAndDown:eggplantInhabitantSprite];
+      [SKTextureAtlas preloadTextureAtlases:@[[SKTextureAtlas atlasNamed:@"ina_paly_ball."],[SKTextureAtlas atlasNamed:@"ina_happy_down"],[SKTextureAtlas atlasNamed:@"surprise"],[SKTextureAtlas atlasNamed:@"ina_anger"],[SKTextureAtlas atlasNamed:@"ina_cry"],[SKTextureAtlas atlasNamed:@"ina_head"],[SKTextureAtlas atlasNamed:@"ina_high"]] withCompletionHandler:^{
+        [self removeAllActions];
+        EggplantVeggiePage *veggiePage = [[EggplantVeggiePage alloc] initWithSize:self.size];
+        veggiePage.scaleMode = SKSceneScaleModeAspectFill;
+        [self.view presentScene:veggiePage];
+      }];
+      
     } else if ([self isTomatoInhabitantTouched:location]) {
-      [self removeAllActions];
+      [self runUpAndDown:tomatoInhabitantSprite];
+      [SKTextureAtlas preloadTextureAtlases:@[[SKTextureAtlas atlasNamed:@"tomato_happy"],[SKTextureAtlas atlasNamed:@"tomato_surprise"],[SKTextureAtlas atlasNamed:@"tomato_anger"],[SKTextureAtlas atlasNamed:@"tomato_cry"],[SKTextureAtlas atlasNamed:@"tomato_fear"]] withCompletionHandler:^{
+        [self removeAllActions];
+        TomotoVeggiePage *veggiePage = [[TomotoVeggiePage alloc] initWithSize:self.size];
+        veggiePage.scaleMode = SKSceneScaleModeAspectFill;
+        [self.view presentScene:veggiePage];
+      }];
       
-      TomotoVeggiePage *veggiePage = [[TomotoVeggiePage alloc] initWithSize:self.size];
-      veggiePage.scaleMode = SKSceneScaleModeAspectFill;
-      [self.view presentScene:veggiePage];
     } else if([self isCarrotInhabitantTouched:location]) {
-      [self removeAllActions];
       
-      CarotVeegiePage *veggiePage = [[CarotVeegiePage alloc] initWithSize:self.size];
-      veggiePage.scaleMode = SKSceneScaleModeAspectFill;
-      [self.view presentScene:veggiePage];
+      [self runUpAndDown:carrotInhabitantSprite];
+      [SKTextureAtlas preloadTextureAtlases:@[[SKTextureAtlas atlasNamed:@"carrot_happy"],[SKTextureAtlas atlasNamed:@"ballon_deceare"],[SKTextureAtlas atlasNamed:@"carrot_increase"],[SKTextureAtlas atlasNamed:@"carrot_scare"],[SKTextureAtlas atlasNamed:@"carrot_surprise"],[SKTextureAtlas atlasNamed:@"cattot_happy_play"],[SKTextureAtlas atlasNamed:@"cattot_next_ball"]] withCompletionHandler:^{
+        [self removeAllActions];
+        CarotVeegiePage *veggiePage = [[CarotVeegiePage alloc] initWithSize:self.size];
+        veggiePage.scaleMode = SKSceneScaleModeAspectFill;
+        [self.view presentScene:veggiePage];
+      }];
+      
     } else if([self isOnionInhabitantSpriteTouched:location]) {
-      [self removeAllActions];
-      
-      OnionVeggiePage *veggiePage = [[OnionVeggiePage alloc] initWithSize:self.size];
-      veggiePage.scaleMode = SKSceneScaleModeAspectFill;
-      [self.view presentScene:veggiePage];
+      [self runUpAndDown:onionInhabitantSprite];
+      [SKTextureAtlas preloadTextureAtlases:@[[SKTextureAtlas atlasNamed:@"onion_anger"],[SKTextureAtlas atlasNamed:@"onion_cry"],[SKTextureAtlas atlasNamed:@"onion_surprise"]] withCompletionHandler:^{
+        OnionVeggiePage *veggiePage = [[OnionVeggiePage alloc] initWithSize:self.size];
+        veggiePage.scaleMode = SKSceneScaleModeAspectFill;
+        [self.view presentScene:veggiePage];
+      }];
+
     }else if([self isRadishInhabitantSpriteTouched:location]) {
-      [self removeAllActions];
-      
-      RadishVeggiePage *veggiePage = [[RadishVeggiePage alloc] initWithSize:self.size];
-      veggiePage.scaleMode = SKSceneScaleModeAspectFill;
-      [self.view presentScene:veggiePage];
+      [self runUpAndDown:radishInhabitantSprite];
+      [SKTextureAtlas preloadTextureAtlases:@[[SKTextureAtlas atlasNamed:@"radish_happy_poor"],[SKTextureAtlas atlasNamed:@"radish_happy"],[SKTextureAtlas atlasNamed:@"radish_eat_1"],[SKTextureAtlas atlasNamed:@"radish_eat_2"],[SKTextureAtlas atlasNamed:@"radish_eat_3"],[SKTextureAtlas atlasNamed:@"raddish_cry"]] withCompletionHandler:^{
+        [self removeAllActions];
+        RadishVeggiePage *veggiePage = [[RadishVeggiePage alloc] initWithSize:self.size];
+        veggiePage.scaleMode = SKSceneScaleModeAspectFill;
+        [self.view presentScene:veggiePage];
+      }];
+
     } else if ([self ispotatoInhabitantSpriteTouched:location]) {
+      [self runUpAndDown:potatoInhabitantSprite];
+      [SKTextureAtlas preloadTextureAtlases:@[[SKTextureAtlas atlasNamed:@"corn_walk"],[SKTextureAtlas atlasNamed:@"potato_walk"],[SKTextureAtlas atlasNamed:@"cucumber_join"],[SKTextureAtlas atlasNamed:@"corn_happy"],[SKTextureAtlas atlasNamed:@"potato_happy"],[SKTextureAtlas atlasNamed:@"potato_lost"]] withCompletionHandler:^{
+        [self removeAllActions];
+        PotatoVeggiePage *veggiePage = [[PotatoVeggiePage alloc] initWithSize:self.size];
+        veggiePage.scaleMode = SKSceneScaleModeAspectFill;
+        [self.view presentScene:veggiePage];;
+      }];
       [self removeAllActions];
-      
-      PotatoVeggiePage *veggiePage = [[PotatoVeggiePage alloc] initWithSize:self.size];
-      veggiePage.scaleMode = SKSceneScaleModeAspectFill;
-      [self.view presentScene:veggiePage];;
     }
   }
 }
@@ -144,6 +163,14 @@
   [self removeAllChildren];
 }
 
-
+- (void)runUpAndDown:(SKSpriteNode *)sprite {
+  SKAction *scale1 = [SKAction scaleTo:65.0 / sprite.size.width duration:0.1];
+  SKAction *scale2 = [SKAction scaleTo:70.0 / sprite.size.width duration:0.1];
+  SKAction *scale3 = [SKAction scaleTo:75.0 / sprite.size.width duration:0.1];
+  SKAction *scale4 = [SKAction scaleTo:70.0 / sprite.size.width duration:0.1];
+  SKAction *scale5 = [SKAction scaleTo:65.0 / sprite.size.width duration:0.1];
+  SKAction *scale6 = [SKAction scaleTo:60.0 / sprite.size.width duration:0.1];
+  [sprite runAction:[SKAction repeatActionForever:[SKAction sequence:@[scale1,scale2,scale3,scale4,scale5,scale6]]]];
+}
 
 @end

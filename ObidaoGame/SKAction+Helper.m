@@ -316,7 +316,7 @@
       NSString* texture = [NSString stringWithFormat:@"blowing_balloon%d",i];
       [walkAnimFrames addObject:[atlas textureNamed:texture]];
     }
-    return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:YES restore:NO];
+    return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.6 resize:YES restore:NO];
   }
   return nil;
 }
