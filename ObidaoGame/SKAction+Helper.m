@@ -418,7 +418,7 @@
     NSString* texture = [NSString stringWithFormat:@"Nobi_lost%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
-  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.06 resize:NO restore:NO];
+  return  [SKAction animateWithTextures:walkAnimFrames timePerFrame:0.15 resize:NO restore:NO];
 }
 
 + (SKAction *)potatoBeginRunning {

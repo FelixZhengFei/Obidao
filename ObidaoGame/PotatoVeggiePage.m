@@ -21,7 +21,8 @@
   int _countsOfEmotionClick;
   BOOL _isTouchAble;
   EmotionType _currentEmotionType;
-  
+  MyAVAudioPlayer *_soundPlayer;
+
   SKSpriteNode *_backButtonSprite;
   SKSpriteNode *_backgroundSprite;
   SKSpriteNode *_wallowSprite;
@@ -52,6 +53,7 @@
   _isTouchAble = TRUE;
   _currentEmotionType = Emotion_Happy;
   [self initThreeInhabitants];
+  [self initSoundPlayer];
 }
 
 - (void)backToObidaoIsland {
@@ -59,6 +61,10 @@
   SKScene * myScene = [[IslandMapScene alloc] initWithSize:self.size];
   myScene.scaleMode = SKSceneScaleModeAspectFill;
   [self.view presentScene:myScene];
+}
+
+- (void)initSoundPlayer {
+  _soundPlayer = [[MyAVAudioPlayer alloc] initPlayerWithEmotionType:_currentEmotionType];
 }
 
 - (void)configBackButtonItem {
@@ -183,20 +189,27 @@
 }
 
 - (void)fingerTouchOneActions {
+  SKAction *soundAction = [SKAction sequence:@[[SKAction waitForDuration:.10],[SKAction runBlock:^{
+    [_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Happy];
+  }]]];
   SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
-  SKAction *move = [SKAction moveToY:CGRectGetMidY(self.frame) * 0.9 duration:1.5];
+  SKAction *move = [SKAction moveToY:CGRectGetMidY(self.frame) * 0.9 duration:1.6];
   SKAction *stopAction = [SKAction runBlock:^{
+    [_soundPlayer stopSound];
     [_cornInhabitantSprite removeAllActions];
     [_potatoInhabitantSprite removeAllActions];
   }];
   SKAction *unionAction = [SKAction sequence:@[move,chaneFingerTouchAbleAction,stopAction]];
   
-  [_cornInhabitantSprite runAction:[SKAction group:@[unionAction,[SKAction cornSpriteWalks]]]];
+  [_cornInhabitantSprite runAction:[SKAction group:@[soundAction,unionAction,[SKAction cornSpriteWalks]]]];
   [_potatoInhabitantSprite runAction:[SKAction group:@[unionAction,[SKAction potatoSpriteWalks]]]];
+
 }
 
 - (void)fingerTouchTwoActions {
   SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
+  SKAction *soundAction = [SKAction runBlock:^{[_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Fear];}];
+  
   SKAction *cucumberJoinAction = [SKAction cucumberJion];
   SKAction *ballFlyoutAction = [SKAction potatoBallFlyOut];
   SKAction *cornFearAction =[SKAction repeatAction:[SKAction scareAnimationWithInhabitantType:VeggieCorn] count:5] ;
@@ -208,7 +221,7 @@
   
   [_cucumberInhabitantSprite runAction:cucumberJoinAction];
   
-    [_cornInhabitantSprite runAction:cornFearAction];
+    [_cornInhabitantSprite runAction:[SKAction group:@[soundAction,cornFearAction]]];
   [_potatoInhabitantSprite runAction:potatoFearAction completion:^{
     [_potatoInhabitantSprite runAction:[SKAction sequence:@[ballFlyoutAction,chaneFingerTouchAbleAction]]];
     _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 0.75;
@@ -230,12 +243,14 @@
 
 - (void)fingerTouchThreeActions {
   SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
+  SKAction *soundAction = [SKAction runBlock:^{[_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Surprise];}];
+
   SKAction *cornHappyAction = [SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:VeggieCorn] count:5] ;
   SKAction *potatoHappyAction = [SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:VeggiePotato] count:5];
   _potatoInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 0.8);
   _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 1.0;
 
-  [_cornInhabitantSprite runAction:cornHappyAction];
+  [_cornInhabitantSprite runAction:[SKAction group:@[soundAction,cornHappyAction]]];
   [_potatoInhabitantSprite runAction:[SKAction sequence:@[potatoHappyAction,chaneFingerTouchAbleAction]]];
 }
 
@@ -243,7 +258,7 @@
   SKAction *hide = [SKAction fadeAlphaTo:0 duration:0.5];
   SKAction *hideOtherTwoSprites = [SKAction runBlock:^{
     _backgroundSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.2);
-    _potatoInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame) * 1.3);
+    _potatoInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame) * 0.9,CGRectGetMidY(self.frame) * 1.2);
     _cornInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame) * .2,CGRectGetMidY(self.frame) * 0.9);
     _cucumberInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame) *1.8,CGRectGetMidY(self.frame) * 1);
     _wallowSprite.hidden = NO;
@@ -251,14 +266,21 @@
   SKAction *show = [SKAction fadeAlphaTo:1 duration:.25];
   [self runAction:[SKAction sequence:@[hide,hideOtherTwoSprites,show]] completion:^{
     SKAction * chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
+    SKAction *soundAction = [SKAction sequence:@[[SKAction waitForDuration:.10],[SKAction runBlock:^{
+      [_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Sanness];
+    }]]];
     _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 1.5;
 
-    SKAction *getLostAction = [SKAction potatoGetLost];
-   SKAction *potatoScale =  [SKAction runBlock:^{
-      _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 1;
+    SKAction *potatoPositionOne = [SKAction runBlock:^{
+      _potatoInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame) *1.1,CGRectGetMidY(self.frame) * 1.3);
     }];
-    SKAction *potatoCryAction = [SKAction repeatAction:[SKAction sadAnimationWithInhabitantType:VeggiePotato] count:3];
+    SKAction *getLostAction = [SKAction group:@[[SKAction potatoGetLost],potatoPositionOne]];
 
+    SKAction *potatoScale =  [SKAction runBlock:^{
+      _potatoInhabitantSprite.position = CGPointMake(CGRectGetMidX(self.frame) * 0.9,CGRectGetMidY(self.frame) * 1.2);
+      _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 0.9;
+    }];
+    SKAction *potatoCryAction = [SKAction group:@[soundAction,[SKAction repeatAction:[SKAction sadAnimationWithInhabitantType:VeggiePotato] count:3]]] ;
     [_potatoInhabitantSprite runAction:[SKAction sequence:@[getLostAction,potatoScale,potatoCryAction,chaneFingerTouchAbleAction]]];
   }];
 }
@@ -266,7 +288,9 @@
 - (void)fingerTouchFiveActions {
   SKAction *chaneFingerTouchAbleAction = [SKAction runBlock:^{[self changeFingerTouchAble];}];
   SKAction *potatoScale =  [SKAction runBlock:^{
-    _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 1;
+    _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 0.9;
+    [_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Disgust];
+
   }];
   _potatoInhabitantSprite.xScale = _potatoInhabitantSprite.yScale = 1.2;
 
@@ -304,8 +328,14 @@
   _cornInhabitantSprite.hidden = NO;
   _cucumberInhabitantSprite.hidden = NO;
   
+  
+  SKAction *soundAction = [SKAction sequence:@[[SKAction waitForDuration:.30],[SKAction runBlock:^{
+    [_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Surprise];
+  }]]];
+  SKAction *potatoHappy = [SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:VeggiePotato] count:5];
+  [_potatoInhabitantSprite runAction:[SKAction group:@[soundAction,potatoHappy]]];
+
   [_cornInhabitantSprite runAction:[SKAction sequence:@[cornUnionAction,cornScale,cornTicklePotato,chaneFingerTouchAbleAction]]];
-  [_potatoInhabitantSprite runAction:[SKAction repeatAction:[SKAction happyAnimationWithInhabitantType:VeggiePotato] count:5]];
   [_cucumberInhabitantSprite runAction:[SKAction sequence:@[cucumberUnionAction,cucumberScale,cucumberTicklePotato]]];
 }
 

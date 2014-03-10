@@ -164,12 +164,12 @@
 }
 
 - (void)runUpAndDown:(SKSpriteNode *)sprite {
-  SKAction *scale1 = [SKAction scaleTo:65.0 / sprite.size.width duration:0.1];
-  SKAction *scale2 = [SKAction scaleTo:70.0 / sprite.size.width duration:0.1];
-  SKAction *scale3 = [SKAction scaleTo:75.0 / sprite.size.width duration:0.1];
-  SKAction *scale4 = [SKAction scaleTo:70.0 / sprite.size.width duration:0.1];
-  SKAction *scale5 = [SKAction scaleTo:65.0 / sprite.size.width duration:0.1];
-  SKAction *scale6 = [SKAction scaleTo:60.0 / sprite.size.width duration:0.1];
+  SKAction *scale1 = [SKAction scaleTo:60.0 / sprite.size.width duration:0.1];
+  SKAction *scale2 = [SKAction scaleTo:65.0 / sprite.size.width duration:0.1];
+  SKAction *scale3 = [SKAction scaleTo:70.0 / sprite.size.width duration:0.1];
+  SKAction *scale4 = [SKAction scaleTo:65.0 / sprite.size.width duration:0.1];
+  SKAction *scale5 = [SKAction scaleTo:60.0 / sprite.size.width duration:0.1];
+  SKAction *scale6 = [SKAction scaleTo:55.0 / sprite.size.width duration:0.1];
   [sprite runAction:[SKAction repeatActionForever:[SKAction sequence:@[scale1,scale2,scale3,scale4,scale5,scale6]]]];
 }
 
