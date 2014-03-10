@@ -127,7 +127,7 @@
     return [SKAction group:@[[SKAction sequence:@[action0,action1]],soundAction]];
     
   } else if (_currentVeggieType == VeggieRadish) {
-    SKAction *soundAction = [SKAction sequence:@[[SKAction waitForDuration:6.50],[SKAction runBlock:^{
+    SKAction *soundAction = [SKAction sequence:@[[SKAction waitForDuration:4.50],[SKAction runBlock:^{
       [_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Disgust];
     }]]];
     SKAction *action0 = [SKAction radishStartEatSand];
@@ -142,7 +142,7 @@
     return [SKAction group:@[[SKAction sequence:@[action0,action1,action2,action3,action4,[SKAction group:@[action5,action6]]]],soundAction]];
     
   } else if (_currentVeggieType == VeggieEggplant) {
-    SKAction *soundAction = [SKAction sequence:@[[SKAction waitForDuration:2.50],[SKAction runBlock:^{
+    SKAction *soundAction = [SKAction sequence:@[[SKAction waitForDuration:1.50],[SKAction runBlock:^{
       [_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Surprise];
     }]]];
     SKAction *action0 = [SKAction eggplantBallDisappear];
@@ -174,7 +174,7 @@
     return [SKAction group:@[soundAction,[SKAction sequence:@[action0,action1,action2]]]];
     
   } else if (_currentVeggieType == VeggieCarot) {
-    SKAction *soundAction = [SKAction sequence:@[[SKAction waitForDuration:5.50],[SKAction runBlock:^{
+    SKAction *soundAction = [SKAction sequence:@[[SKAction waitForDuration:3.0],[SKAction runBlock:^{
       [_soundPlayer upDateSoundPlayerUnderEmotionType:Emotion_Fear];
     }]]];
     SKAction *action0 = [SKAction repeatAction:[SKAction noEmotionAnimationWithInhabitantType:_currentVeggieType] count:5];
