@@ -62,10 +62,6 @@
   [self addChild:background];
 }
 
-- (void)reloadTextureAtlasImages:(VeggieType)veggieType {
-
-}
-
 - (void)initAllThingsOfInhabitantPage:(VeggieType)veggieType {
   _countsOfEmotionClick = 0;
   isTouchAble = TRUE;

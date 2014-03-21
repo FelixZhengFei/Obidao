@@ -18,5 +18,4 @@
 - (void)addBackgroundImage:(VeggieType)veggieType;
 - (void)initAllThingsOfInhabitantPage:(VeggieType)veggieType;
 - (void)showTheFirstComeVeggieEmotion:(VeggieType)veggieType;
-- (void)reloadTextureAtlasImages:(VeggieType)veggieType;
 @end
