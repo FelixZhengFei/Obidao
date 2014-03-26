@@ -404,7 +404,7 @@
 + (SKAction *)potatoBallFlyOut {
   NSMutableArray *walkAnimFrames = [NSMutableArray array];
   SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"patato_balloon_fly"];
-  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+  for (int i = 2; i < atlas.textureNames.count + 1; i++) {
     NSString* texture = [NSString stringWithFormat:@"balloon_fly%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
@@ -414,7 +414,7 @@
 + (SKAction *)potatoGetLost {
   NSMutableArray *walkAnimFrames = [NSMutableArray array];
   SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_lost"];
-  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+  for (int i = 2; i < atlas.textureNames.count + 1; i++) {
     NSString* texture = [NSString stringWithFormat:@"Nobi_lost%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }
@@ -434,7 +434,7 @@
 + (SKAction *)potatoFallIntoGround {
   NSMutableArray *walkAnimFrames = [NSMutableArray array];
   SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"potato_fall_intoground"];
-  for (int i = 1; i < atlas.textureNames.count + 1; i++) {
+  for (int i = 2; i < atlas.textureNames.count + 1; i++) {
     NSString* texture = [NSString stringWithFormat:@"nibo_fall%04d",i];
     [walkAnimFrames addObject:[atlas textureNamed:texture]];
   }

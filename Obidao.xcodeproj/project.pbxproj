@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960A6D3D18E283160003239E /* Nobi_fear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 960A6D3C18E283160003239E /* Nobi_fear@2x.png */; };
+		960A6D3F18E288E60003239E /* balloon_fly_away@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 960A6D3E18E288E60003239E /* balloon_fly_away@2x.png */; };
+		960A6D4118E28DE60003239E /* Nobi_happy_one@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 960A6D4018E28DE60003239E /* Nobi_happy_one@2x.png */; };
+		960A6D4318E28E7C0003239E /* Nobi_lost_one@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 960A6D4218E28E7C0003239E /* Nobi_lost_one@2x.png */; };
+		960A6D4518E2977B0003239E /* Nobi_cry_one@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 960A6D4418E2977B0003239E /* Nobi_cry_one@2x.png */; };
+		960A6D4718E299610003239E /* nobi_run_one@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 960A6D4618E299610003239E /* nobi_run_one@2x.png */; };
+		960A6D4918E29C140003239E /* nibi_fall_one@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 960A6D4818E29C140003239E /* nibi_fall_one@2x.png */; };
+		960A6D4B18E29CC50003239E /* nobi_disgust_one@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 960A6D4A18E29CC50003239E /* nobi_disgust_one@2x.png */; };
 		9619E9A218BD903100DB692A /* background_image_potato_ipadhd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9619E99D18BD903100DB692A /* background_image_potato_ipadhd@2x.png */; };
 		9619E9A318BD903100DB692A /* tree1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9619E99E18BD903100DB692A /* tree1@2x.png */; };
 		9619E9A418BD903100DB692A /* tree2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9619E99F18BD903100DB692A /* tree2@2x.png */; };
@@ -147,6 +155,8 @@
 		967B2342185EE36400C16B8E /* EmotionPageControllerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 967B2340185EE36400C16B8E /* EmotionPageControllerScene.m */; };
 		967B236A185EE45500C16B8E /* EggplantVeggiePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 967B2369185EE45500C16B8E /* EggplantVeggiePage.m */; };
 		967B236B185EE45500C16B8E /* EggplantVeggiePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 967B2369185EE45500C16B8E /* EggplantVeggiePage.m */; };
+		96BBC88818DC399200A08E0F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BBC88618DC399200A08E0F /* Icon.png */; };
+		96BBC88918DC399200A08E0F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BBC88718DC399200A08E0F /* Icon@2x.png */; };
 		96BDAABF18618DD300ED84E8 /* surprise.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAABE18618DD300ED84E8 /* surprise.atlas */; };
 		96BDAAC118618E2200ED84E8 /* ina_paly_ball.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAAC018618E2200ED84E8 /* ina_paly_ball.atlas */; };
 		96D0B60318BEDD60007B5F0F /* potato_digust.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96D0B60218BEDD60007B5F0F /* potato_digust.atlas */; };
@@ -174,6 +184,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		960A6D3C18E283160003239E /* Nobi_fear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nobi_fear@2x.png"; sourceTree = "<group>"; };
+		960A6D3E18E288E60003239E /* balloon_fly_away@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon_fly_away@2x.png"; sourceTree = "<group>"; };
+		960A6D4018E28DE60003239E /* Nobi_happy_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nobi_happy_one@2x.png"; sourceTree = "<group>"; };
+		960A6D4218E28E7C0003239E /* Nobi_lost_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nobi_lost_one@2x.png"; sourceTree = "<group>"; };
+		960A6D4418E2977B0003239E /* Nobi_cry_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nobi_cry_one@2x.png"; sourceTree = "<group>"; };
+		960A6D4618E299610003239E /* nobi_run_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nobi_run_one@2x.png"; sourceTree = "<group>"; };
+		960A6D4818E29C140003239E /* nibi_fall_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nibi_fall_one@2x.png"; sourceTree = "<group>"; };
+		960A6D4A18E29CC50003239E /* nobi_disgust_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nobi_disgust_one@2x.png"; sourceTree = "<group>"; };
 		9619E99D18BD903100DB692A /* background_image_potato_ipadhd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_image_potato_ipadhd@2x.png"; sourceTree = "<group>"; };
 		9619E99E18BD903100DB692A /* tree1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree1@2x.png"; sourceTree = "<group>"; };
 		9619E99F18BD903100DB692A /* tree2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree2@2x.png"; sourceTree = "<group>"; };
@@ -235,15 +253,15 @@
 		965AE98E1862B99900FF3D39 /* RadishVeggiePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadishVeggiePage.m; sourceTree = "<group>"; };
 		965AE98F1862B99900FF3D39 /* CucumberVeggiePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CucumberVeggiePage.h; sourceTree = "<group>"; };
 		965AE9901862B99900FF3D39 /* CucumberVeggiePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CucumberVeggiePage.m; sourceTree = "<group>"; };
-		967B21A7185EDE5000C16B8E /* ObidaoGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObidaoGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		967B21A7185EDE5000C16B8E /* Obidao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obidao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967B21AA185EDE5000C16B8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		967B21AC185EDE5000C16B8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		967B21AE185EDE5000C16B8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		967B21B0185EDE5000C16B8E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		967B21B4185EDE5000C16B8E /* ObidaoGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObidaoGame-Info.plist"; sourceTree = "<group>"; };
+		967B21B4185EDE5000C16B8E /* Obidao-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Obidao-Info.plist"; sourceTree = "<group>"; };
 		967B21B6185EDE5000C16B8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		967B21B8185EDE5000C16B8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		967B21BA185EDE5000C16B8E /* ObidaoGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObidaoGame-Prefix.pch"; sourceTree = "<group>"; };
+		967B21BA185EDE5000C16B8E /* Obidao-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obidao-Prefix.pch"; sourceTree = "<group>"; };
 		967B21BB185EDE5000C16B8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		967B21BC185EDE5000C16B8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		967B21BF185EDE5000C16B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -253,9 +271,9 @@
 		967B21C7185EDE5000C16B8E /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		967B21C8185EDE5000C16B8E /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		967B21CC185EDE5000C16B8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		967B21D2185EDE5000C16B8E /* ObidaoGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObidaoGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		967B21D2185EDE5000C16B8E /* ObidaoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObidaoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		967B21D3185EDE5000C16B8E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		967B21DB185EDE5000C16B8E /* ObidaoGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObidaoGameTests-Info.plist"; sourceTree = "<group>"; };
+		967B21DB185EDE5000C16B8E /* ObidaoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObidaoTests-Info.plist"; sourceTree = "<group>"; };
 		967B21DD185EDE5000C16B8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		967B21DF185EDE5000C16B8E /* ObidaoGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObidaoGameTests.m; sourceTree = "<group>"; };
 		967B21ED185EDFF800C16B8E /* Emotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emotion.h; sourceTree = "<group>"; };
@@ -309,6 +327,8 @@
 		967B2340185EE36400C16B8E /* EmotionPageControllerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionPageControllerScene.m; sourceTree = "<group>"; };
 		967B2368185EE45500C16B8E /* EggplantVeggiePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EggplantVeggiePage.h; sourceTree = "<group>"; };
 		967B2369185EE45500C16B8E /* EggplantVeggiePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EggplantVeggiePage.m; sourceTree = "<group>"; };
+		96BBC88618DC399200A08E0F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		96BBC88718DC399200A08E0F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		96BDAABE18618DD300ED84E8 /* surprise.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = surprise.atlas; sourceTree = "<group>"; };
 		96BDAAC018618E2200ED84E8 /* ina_paly_ball.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ina_paly_ball.atlas; sourceTree = "<group>"; };
 		96D0B60218BEDD60007B5F0F /* potato_digust.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = potato_digust.atlas; sourceTree = "<group>"; };
@@ -456,8 +476,8 @@
 		967B21A8185EDE5000C16B8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				967B21A7185EDE5000C16B8E /* ObidaoGame.app */,
-				967B21D2185EDE5000C16B8E /* ObidaoGameTests.xctest */,
+				967B21A7185EDE5000C16B8E /* Obidao.app */,
+				967B21D2185EDE5000C16B8E /* ObidaoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -499,10 +519,12 @@
 		967B21B3185EDE5000C16B8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				967B21B4185EDE5000C16B8E /* ObidaoGame-Info.plist */,
+				96BBC88618DC399200A08E0F /* Icon.png */,
+				96BBC88718DC399200A08E0F /* Icon@2x.png */,
+				967B21B4185EDE5000C16B8E /* Obidao-Info.plist */,
 				967B21B5185EDE5000C16B8E /* InfoPlist.strings */,
 				967B21B8185EDE5000C16B8E /* main.m */,
-				967B21BA185EDE5000C16B8E /* ObidaoGame-Prefix.pch */,
+				967B21BA185EDE5000C16B8E /* Obidao-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -519,7 +541,7 @@
 		967B21DA185EDE5000C16B8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				967B21DB185EDE5000C16B8E /* ObidaoGameTests-Info.plist */,
+				967B21DB185EDE5000C16B8E /* ObidaoTests-Info.plist */,
 				967B21DC185EDE5000C16B8E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -603,6 +625,14 @@
 		967B2229185EE0B900C16B8E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				960A6D4A18E29CC50003239E /* nobi_disgust_one@2x.png */,
+				960A6D4818E29C140003239E /* nibi_fall_one@2x.png */,
+				960A6D4618E299610003239E /* nobi_run_one@2x.png */,
+				960A6D4418E2977B0003239E /* Nobi_cry_one@2x.png */,
+				960A6D4218E28E7C0003239E /* Nobi_lost_one@2x.png */,
+				960A6D4018E28DE60003239E /* Nobi_happy_one@2x.png */,
+				960A6D3C18E283160003239E /* Nobi_fear@2x.png */,
+				960A6D3E18E288E60003239E /* balloon_fly_away@2x.png */,
 				9619E99C18BD900700DB692A /* Potato */,
 				967B22F2185EE19300C16B8E /* Happy images */,
 				967B22E5185EE17900C16B8E /* Onion */,
@@ -772,9 +802,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		967B21A6185EDE5000C16B8E /* ObidaoGame */ = {
+		967B21A6185EDE5000C16B8E /* Obidao */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 967B21E3185EDE5000C16B8E /* Build configuration list for PBXNativeTarget "ObidaoGame" */;
+			buildConfigurationList = 967B21E3185EDE5000C16B8E /* Build configuration list for PBXNativeTarget "Obidao" */;
 			buildPhases = (
 				967B21A3185EDE5000C16B8E /* Sources */,
 				967B21A4185EDE5000C16B8E /* Frameworks */,
@@ -784,14 +814,14 @@
 			);
 			dependencies = (
 			);
-			name = ObidaoGame;
+			name = Obidao;
 			productName = ObidaoGame;
-			productReference = 967B21A7185EDE5000C16B8E /* ObidaoGame.app */;
+			productReference = 967B21A7185EDE5000C16B8E /* Obidao.app */;
 			productType = "com.apple.product-type.application";
 		};
-		967B21D1185EDE5000C16B8E /* ObidaoGameTests */ = {
+		967B21D1185EDE5000C16B8E /* ObidaoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 967B21E6185EDE5000C16B8E /* Build configuration list for PBXNativeTarget "ObidaoGameTests" */;
+			buildConfigurationList = 967B21E6185EDE5000C16B8E /* Build configuration list for PBXNativeTarget "ObidaoTests" */;
 			buildPhases = (
 				967B21CE185EDE5000C16B8E /* Sources */,
 				967B21CF185EDE5000C16B8E /* Frameworks */,
@@ -802,9 +832,9 @@
 			dependencies = (
 				967B21D8185EDE5000C16B8E /* PBXTargetDependency */,
 			);
-			name = ObidaoGameTests;
+			name = ObidaoTests;
 			productName = ObidaoGameTests;
-			productReference = 967B21D2185EDE5000C16B8E /* ObidaoGameTests.xctest */;
+			productReference = 967B21D2185EDE5000C16B8E /* ObidaoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -816,12 +846,15 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Originate Inc.";
 				TargetAttributes = {
+					967B21A6185EDE5000C16B8E = {
+						DevelopmentTeam = XDVKN4EYY7;
+					};
 					967B21D1185EDE5000C16B8E = {
 						TestTargetID = 967B21A6185EDE5000C16B8E;
 					};
 				};
 			};
-			buildConfigurationList = 967B21A2185EDE5000C16B8E /* Build configuration list for PBXProject "ObidaoGame" */;
+			buildConfigurationList = 967B21A2185EDE5000C16B8E /* Build configuration list for PBXProject "Obidao" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -834,8 +867,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				967B21A6185EDE5000C16B8E /* ObidaoGame */,
-				967B21D1185EDE5000C16B8E /* ObidaoGameTests */,
+				967B21A6185EDE5000C16B8E /* Obidao */,
+				967B21D1185EDE5000C16B8E /* ObidaoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -848,9 +881,11 @@
 				967B2305185EE1A600C16B8E /* carot_happy_ipadhd@2x.png in Resources */,
 				9619E9B518BDA4DD00DB692A /* corn_fear.atlas in Resources */,
 				965AE96218628A4500FF3D39 /* carrot_happy.atlas in Resources */,
+				960A6D4918E29C140003239E /* nibi_fall_one@2x.png in Resources */,
 				96272E9418BDC64B00CA579E /* qiqiu@2x.png in Resources */,
 				96272F3718BDDACA00CA579E /* potato_lost.atlas in Resources */,
 				965AE98218629A1400FF3D39 /* tomato_fear.atlas in Resources */,
+				960A6D3D18E283160003239E /* Nobi_fear@2x.png in Resources */,
 				967B2303185EE1A600C16B8E /* potato_happy_ipadhd@2x.png in Resources */,
 				967B2233185EE0E300C16B8E /* island_map_ipadhd@2x.png in Resources */,
 				965AE9401862863700FF3D39 /* ina_cry.atlas in Resources */,
@@ -882,6 +917,7 @@
 				967B2235185EE0E400C16B8E /* background_image_radish_ipadhd@2x.png in Resources */,
 				967B21C0185EDE5000C16B8E /* Main_iPhone.storyboard in Resources */,
 				96272F3518BDDAC400CA579E /* potato_cry.atlas in Resources */,
+				96BBC88918DC399200A08E0F /* Icon@2x.png in Resources */,
 				967B2328185EE1F600C16B8E /* emotion_fear.mp3 in Resources */,
 				9619E9A218BD903100DB692A /* background_image_potato_ipadhd@2x.png in Resources */,
 				965AE9421862863700FF3D39 /* ina_head.atlas in Resources */,
@@ -889,6 +925,7 @@
 				96EE730F18BDB5D50009ED02 /* corn_netuarl@2x.png in Resources */,
 				965AE97718628AE000FF3D39 /* radish_happy.atlas in Resources */,
 				965AE97418628AE000FF3D39 /* radish_eat_2.atlas in Resources */,
+				960A6D4B18E29CC50003239E /* nobi_disgust_one@2x.png in Resources */,
 				967B2244185EE10700C16B8E /* foxy_neutral@2x.png in Resources */,
 				967B2301185EE1A600C16B8E /* onion_happy_ipadhd@2x.png in Resources */,
 				9619E9AA18BD904C00DB692A /* corn_walk.atlas in Resources */,
@@ -905,22 +942,28 @@
 				967B232E185EE1F600C16B8E /* emotion_anger.mp3 in Resources */,
 				9619E9B718BDA4E400DB692A /* cucumber_join.atlas in Resources */,
 				9619E9A418BD903100DB692A /* tree2@2x.png in Resources */,
+				960A6D4518E2977B0003239E /* Nobi_cry_one@2x.png in Resources */,
 				965AE97D1862973900FF3D39 /* carrot_increase.atlas in Resources */,
 				965AE9511862888900FF3D39 /* tomato_anger.atlas in Resources */,
 				967B2307185EE1A600C16B8E /* cucumber_happy_ipadhd@2x.png in Resources */,
 				967B222F185EE0E300C16B8E /* background_image_foxy_ipadhd@2x.png in Resources */,
+				96BBC88818DC399200A08E0F /* Icon.png in Resources */,
 				967B22FF185EE1A600C16B8E /* radish_happy_ipadhd@2x.png in Resources */,
+				960A6D4118E28DE60003239E /* Nobi_happy_one@2x.png in Resources */,
 				9619E9A518BD903100DB692A /* tree3@2x.png in Resources */,
 				965AE96118628A4500FF3D39 /* ballon_deceare.atlas in Resources */,
 				9619E9A318BD903100DB692A /* tree1@2x.png in Resources */,
 				965AE96818628A5100FF3D39 /* carrot_scare.atlas in Resources */,
 				967B232A185EE1F600C16B8E /* emotion_sad.mp3 in Resources */,
 				967B21B7185EDE5000C16B8E /* InfoPlist.strings in Resources */,
+				960A6D4318E28E7C0003239E /* Nobi_lost_one@2x.png in Resources */,
 				965AE95B1862895000FF3D39 /* onion_anger.atlas in Resources */,
 				967B2309185EE1A600C16B8E /* eggplant_happy_ipadhd@2x.png in Resources */,
 				9619E9A818BD904300DB692A /* potato_walk.atlas in Resources */,
 				965AE97218628AE000FF3D39 /* raddish_cry.atlas in Resources */,
 				96D0B61118BF14EC007B5F0F /* corn_found_potato.atlas in Resources */,
+				960A6D3F18E288E60003239E /* balloon_fly_away@2x.png in Resources */,
+				960A6D4718E299610003239E /* nobi_run_one@2x.png in Resources */,
 				9628D66A18C7214900A83162 /* patato_balloon_fly.atlas in Resources */,
 				965AE97518628AE000FF3D39 /* radish_eat_3.atlas in Resources */,
 				96BDAABF18618DD300ED84E8 /* surprise.atlas in Resources */,
@@ -1024,7 +1067,7 @@
 /* Begin PBXTargetDependency section */
 		967B21D8185EDE5000C16B8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 967B21A6185EDE5000C16B8E /* ObidaoGame */;
+			target = 967B21A6185EDE5000C16B8E /* Obidao */;
 			targetProxy = 967B21D7185EDE5000C16B8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1082,7 +1125,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Originate China, LTD. (XDVKN4EYY7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Originate China, LTD. (XDVKN4EYY7)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1122,7 +1166,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Originate China, LTD. (XDVKN4EYY7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Originate China, LTD. (XDVKN4EYY7)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1144,12 +1189,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Originate China, LTD. (XDVKN4EYY7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ObidaoGame/ObidaoGame-Prefix.pch";
-				INFOPLIST_FILE = "ObidaoGame/ObidaoGame-Info.plist";
+				GCC_PREFIX_HEADER = "ObidaoGame/Obidao-Prefix.pch";
+				INFOPLIST_FILE = "ObidaoGame/Obidao-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Obidao;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1161,12 +1207,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Originate China, LTD. (XDVKN4EYY7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ObidaoGame/ObidaoGame-Prefix.pch";
-				INFOPLIST_FILE = "ObidaoGame/ObidaoGame-Info.plist";
+				GCC_PREFIX_HEADER = "ObidaoGame/Obidao-Prefix.pch";
+				INFOPLIST_FILE = "ObidaoGame/Obidao-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Obidao;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1189,8 +1236,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "ObidaoGameTests/ObidaoGameTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ObidaoGameTests/ObidaoTests-Info.plist";
+				PRODUCT_NAME = ObidaoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1208,8 +1255,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObidaoGame/ObidaoGame-Prefix.pch";
-				INFOPLIST_FILE = "ObidaoGameTests/ObidaoGameTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ObidaoGameTests/ObidaoTests-Info.plist";
+				PRODUCT_NAME = ObidaoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1218,7 +1265,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		967B21A2185EDE5000C16B8E /* Build configuration list for PBXProject "ObidaoGame" */ = {
+		967B21A2185EDE5000C16B8E /* Build configuration list for PBXProject "Obidao" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967B21E1185EDE5000C16B8E /* Debug */,
@@ -1227,7 +1274,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		967B21E3185EDE5000C16B8E /* Build configuration list for PBXNativeTarget "ObidaoGame" */ = {
+		967B21E3185EDE5000C16B8E /* Build configuration list for PBXNativeTarget "Obidao" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967B21E4185EDE5000C16B8E /* Debug */,
@@ -1236,7 +1283,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		967B21E6185EDE5000C16B8E /* Build configuration list for PBXNativeTarget "ObidaoGameTests" */ = {
+		967B21E6185EDE5000C16B8E /* Build configuration list for PBXNativeTarget "ObidaoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967B21E7185EDE5000C16B8E /* Debug */,

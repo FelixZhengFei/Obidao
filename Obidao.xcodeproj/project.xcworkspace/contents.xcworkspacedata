@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ObidaoGame.xcodeproj">
+      location = "self:Obidao.xcodeproj">
    </FileRef>
 </Workspace>
